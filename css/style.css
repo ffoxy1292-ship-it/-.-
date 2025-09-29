@@ -1,6 +1,6 @@
 .articles-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    flex-direction: wrap;
     gap: 15px;
     margin-top: 30px;
     list-style: none; /* إزالة النقاط */
@@ -10,7 +10,7 @@
 .articles-list a {
     display: block;
     padding: 15px 20px;
-    background: white;
+    background: #FFB6C1;
     border-radius: 10px;
     text-decoration: none;
     color: #333;
