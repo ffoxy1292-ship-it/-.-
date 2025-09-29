@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحسين الصحة النفسية - دليل العناية بالذات والسلام الداخلي</title>
+    <style>
+        :root {
+            --bg: #faf5ff;
+            --card: #ffffff;
+            --accent: #8b5cf6;
+            --accent2: #c084fc;
+            --muted: #556274;
+            --ok: #10b981;
+            --warn: #f59e0b;
+            --maxW: 980px;
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Tahoma, Arial, system-ui;
+            line-height: 1.7;
+            background: var(--bg);
+            color: #0b1320;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: var(--maxW);
+            margin: 0 auto;
+            padding: 12px;
+        }
+
+        .header {
+            background: var(--card);
+            padding: 18px;
+            border-radius: var(--radius);
+            box-shadow: 0 8px 30px rgba(12, 18, 32, .06);
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header .text {
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: var(--accent);
+            font-size: 20px;
+        }
+
+        .header p {
+            margin: 6px 0 0;
+            color: var(--muted);
+        }
+
+        .header img {
+            width: 220px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex: 0 0 220px;
+        }
+
+        /* content cards */
+        .card {
+            background: var(--card);
+            padding: 16px;
+            border-radius: 12px;
+            margin-top: 14px;
+            border: 1px solid rgba(12, 18, 32, .03);
+        }
+
+        h2 {
+            color: var(--accent);
+            margin: 10px 0 8px;
+        }
+
+        h3 {
+            color: var(--accent2);
+            margin: 8px 0;
+        }
+
+        p, li {
+            color: #0b1320;
+        }
+
+        ul, ol {
+            margin: 8px 0 12px;
+            padding-left: 18px;
+        }
+
+        img.res {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 12px 0;
+            display: block;
+        }
+
+        .note {
+            background: #f3e8ff;
+            border-left: 4px solid var(--accent);
+            padding: 10px;
+            border-radius: 8px;
+            color: #5b21b6;
+        }
+
+        .warn {
+            background: #fff8e6;
+            border-left: 4px solid var(--warn);
+            padding: 10px;
+            border-radius: 8px;
+            color: #5a3d00;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #f3f4f6;
+            text-align: center;
+        }
+
+        thead {
+            background: #faf5ff;
+            color: var(--muted);
+        }
+
+        .cta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .btn {
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-weight: 800;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .small {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            margin: 18px 0;
+            font-size: 13px;
+        }
+
+        /* TEXT WRAP + FLEX FIXES for mobile (fixes word-per-line issue) */
+        header .text, .header, .card, .container {
+            word-break: normal;
+            hyphens: auto;
+        }
+
+        a {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        /* Responsive: stack header on small screens, image full-width */
+        @media (max-width: 720px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 14px;
+            }
+
+            .header img {
+                width: 100%;
+                height: auto;
+                flex: 0 0 auto;
+                order: -1;
+            }
+
+            .header h1 {
+                font-size: 18px;
+            }
+
+            body {
+                padding: 12px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "HowTo",
+                "name": "تحسين الصحة النفسية",
+                "step": [
+                    {
+                        "@type": "HowToStep",
+                        "name": "الوعي بالمشاعر",
+                        "text": "تعلم التعرف على مشاعرك وقبولها دون حكم، فهذه الخطوة الأساسية للتعافي النفسي."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "ممارسة الرعاية الذاتية",
+                        "text": "اهتم باحتياجاتك الجسدية والعاطفية من خلال روتين يومي متوازن."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "بناء علاقات صحية",
+                        "text": "احط نفسك بأشخاص داعمين وإيجابيين يرفعون من طاقتك النفسية."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "تطوير التفكير الإيجابي",
+                        "text": "تدرب على إعادة صياغة الأفكار السلبية وتقدير الجوانب المشرقة في حياتك."
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "كم من الوقت يحتاج تحسين الصحة النفسية؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "الرحلة النفسية مستمرة، لكن يمكن ملاحظة تحسن ملحوظ خلال 3-6 أشهر من الممارسة المنتظمة للعادات الصحية."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "متى يجب طلب المساعدة المهنية؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "عندما تتداخل الأعراض مع حياتك اليومية، أو تشعر بأنك عالق، أو تفكر في إيذاء نفسك - فلا تتردد في طلب المساعدة."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "هل يمكن الشفاء التام من المشاكل النفسية؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "نعم، العديد من المشاكل النفسية قابلة للعلاج والتحسن الكبير، والتعافي عملية مستمرة وليست وجهة نهائية."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header" role="banner">
+            <div class="text">
+                <h1>تحسين الصحة النفسية - دليل العناية بالذات والسلام الداخلي</h1>
+                <p class="small">استراتيجيات عملية لبناء صحة نفسية قوية والتعامل مع تحديات الحياة بمرونة</p>
+            </div>
+            <img alt="شخص يتأمل في الطبيعة" src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200&auto=format&fit=crop" />
+        </header>
+
+        <!-- Table of contents -->
+        <nav aria-label="فهرس المحتوى" class="card">
+            <strong>فهرس سريع:</strong>
+            <ul style="margin: 8px 0 0; padding-left: 18px;">
+                <li><a href="#awareness">الوعي الذاتي</a></li>
+                <li><a href="#self-care">الرعاية الذاتية</a></li>
+                <li><a href="#mindfulness">اليقظة الذهنية</a></li>
+                <li><a href="#thinking">إعادة هيكلة التفكير</a></li>
+                <li><a href="#relationships">العلاقات الصحية</a></li>
+                <li><a href="#stress">إدارة التوتر</a></li>
+                <li><a href="#purpose">المعنى والهدف</a></li>
+                <li><a href="#mistakes">أخطاء شائعة</a></li>
+            </ul>
+        </nav>
+
+        <!-- Article -->
+        <article class="card" id="awareness">
+            <h2>1) الوعي الذاتي - أساس الصحة النفسية</h2>
+            <p>أن تعرف نفسك هو أول خطوة نحو التغيير الإيجابي. الوعي بمشاعرك وأفكارك يمنحك السيطرة عليها.</p>
+            <ul>
+                <li><strong>تعرف على مشاعرك:</strong> ما الذي تشعر به حقاً؟ اسمِ المشاعر بأسمائها.</li>
+                <li><strong>افحص أفكارك:</strong> ما هي الأفكار التلقائية التي ترد على ذهنك؟</li>
+                <li><strong>لاحظ ردود فعلك:</strong> كيف تستجيب عادة للمواقف الصعبة؟</li>
+                <li><strong>تقبل دون حكم:</strong> المشاعر ليست جيدة أو سيئة، هي مجرد إشارات.</li>
+            </ul>
+            <div class="note">خلاصة: 5 دقائق يومياً من التأمل في مشاعرك وأفكارك يمكن أن تغير علاقتك مع نفسك.</div>
+        </article>
+
+        <article class="card" id="self-care">
+            <h2>2) الرعاية الذاتية - ليست رفاهية بل ضرورة</h2>
+            <h3>مستويات الرعاية الذاتية</h3>
+            <ol>
+                <li><strong>الجسدية:</strong> نوم كاف، تغذية متوازنة، حركة بدنية، راحة.</li>
+                <li><strong>العاطفية:</strong> التعبير عن المشاعر، الحدود الصحية، الراحة النفسية.</li>
+                <li><strong>العقلية:</strong> تعلم جديد، تحديات عقلية، استراحات ذهنية.</li>
+                <li><strong>الروحانية:</strong> التأمل، الصلاة، الاتصال بالطبيعة، القيم.</li>
+            </ol>
+            <h3>روتين يومي للعناية النفسية</h3>
+            <div style="display: grid; gap: 12px;">
+                <div>
+                    <strong>الصباح</strong>
+                    <ul>
+                        <li>10 دقائق تأمل أو تنفس عميق</li>
+                        <li>شرب كوب ماء دافئ</li>
+                        <li>تحديد نية إيجابية لليوم</li>
+                        <li>تجنب الهاتف أول ساعة</li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>المساء</strong>
+                    <ul>
+                        <li>تسجيل 3 أمور ممتن لها</li>
+                        <li>قراءة شيء ملهم</li>
+                        <li>إيقاف الشاشات قبل النوم بساعة</li>
+                        <li>طقوس استرخاء قبل النوم</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="warn">تحذير: إهمال الرعاية الذاتية ليس علامة قوة، بل يؤدي للاحتراق النفسي والجسدي.</div>
+        </article>
+
+        <article class="card" id="mindfulness">
+            <h2>3) اليقظة الذهنية - العيش في اللحظة الحالية</h2>
+            <h3>تمارين اليقظة اليومية</h3>
+            <ol>
+                <li><strong>التنفس الواعي:</strong> ركز على شهيق وزفير لمدة 3-5 دقائق.</li>
+                <li><strong>الأكل الواعي:</strong> كل ببطء ولاحظ الطعم، الرائحة، والملمس.</li>
+                <li><strong>المشي الواعي:</strong> امشِ ولاحظ حركة جسدك ومحيطك.</li>
+                <li><strong>الاستماع النشط:</strong> استمع كلياً دون التخطيط للرد.</li>
+            </ol>
+            
+            <h3>فوائد الممارسة المنتظمة</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>المجال</th>
+                        <th>التحسن المتوقع</th>
+                        <th>الوقت اللازم</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>تقليل التوتر</td>
+                        <td>30-40%</td>
+                        <td>4-8 أسابيع</td>
+                    </tr>
+                    <tr>
+                        <td>تحسين النوم</td>
+                        <td>50-60%</td>
+                        <td>2-4 أسابيع</td>
+                    </tr>
+                    <tr>
+                        <td>زيادة التركيز</td>
+                        <td>40-50%</td>
+                        <td>6-8 أسابيع</td>
+                    </tr>
+                    <tr>
+                        <td>تحسين العلاقات</td>
+                        <td>35-45%</td>
+                        <td>8-12 أسبوع</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note">نتيجة متوقعة: انخفاض ملحوظ في القلق وتحسن في جودة الحياة خلال 8 أسابيع من الممارسة المنتظمة.</div>
+        </article>
+
+        <article class="card" id="thinking">
+            <h2>4) إعادة هيكلة التفكير - تغيير الحوار الداخلي</h2>
+            <ul>
+                <li><strong>تعرف على أنماط التفكير المشوه:</strong> مثل التعميم، التكبير، التصفية العقلية.</li>
+                <li><strong>تحدي الأفكار السلبية:</strong> اسأل: ما الدليل؟ هل هناك تفسير آخر؟</li>
+                <li><strong>استبدل الأفكار:</strong> حول "أنا فاشل" إلى "هذه تجربة تعلمت منها".</li>
+                <li><strong>مارس التعاطف الذاتي:</strong> عامل نفسك كما تعامل صديقاً عزيزاً.</li>
+                <li><strong>ركز على الحلول:</strong> بدلاً من التذمر من المشكلة، ابحث عن حل.</li>
+            </ul>
+        </article>
+
+        <article class="card" id="relationships">
+            <h2>5) العلاقات الصحية - بيئة داعمة للنمو النفسي</h2>
+            <p>مبادئ العلاقات المعززة للصحة النفسية:</p>
+            <ul>
+                <li><strong>الحدود الواضحة:</strong> اعرف ما تقبله وما لا تقبله في العلاقات.</li>
+                <li><strong>التواصل الصادق:</strong> عبر عن احتياجاتك ومشاعرك بوضوح ولطف.</li>
+                <li><strong>الاستماع الفعال:</strong> أنصت لفهم لا للرد.</li>
+                <li><strong>التبادل المتوازن:</strong> علاقات متكافئة تأخذ وتعطي.</li>
+                <li><strong>الدعم المتبادل:</strong> كن داعماً وتقبل الدعم من الآخرين.</li>
+            </ul>
+            <p>استراتيجية ذكية: خصص وقتاً جيداً للأشخاص الذين يرفعون من طاقتك ويشعرونك بالرضا عن نفسك.</p>
+        </article>
+
+        <article class="card" id="stress">
+            <h2>6) إدارة التوتر - أدوات عملية للتعامل مع الضغوط</h2>
+            <ul>
+                <li><strong>التنفس العميق:</strong> 4-7-8 (شهيق 4، حبس 7، زفير 8).</li>
+                <li><strong>التمارين الرياضية:</strong> 30 دقيقة يومياً تقلل هرمونات التوتر.</li>
+                <li><strong>تنظيم الوقت:</strong> خطط مسبقاً وتجنب التراكم.</li>
+                <li><strong>فن الرفض:</strong> تعلم قول لا للحفاظ على طاقتك.</li>
+                <li><strong>الاستراحات المنتظمة:</strong> خذ فترات راحة خلال اليوم.</li>
+                <li><strong>الهوايات المبهجة:</strong> مارس نشاطات تستمتع بها بانتظام.</li>
+            </ul>
+        </article>
+
+        <article class="card" id="purpose">
+            <h2>7) المعنى والهدف - وقود الصحة النفسية</h2>
+            <p>طرق لاكتشاف وتغذية الشعور بالمعنى:</p>
+            <ul>
+                <li><strong>اكتشف قيمك:</strong> ما الذي يهمك حقاً في الحياة؟</li>
+                <strong>ضع أهداف ذات معنى:</strong> أهداف تتوافق مع قيمك وشغفك.</li>
+                <li><strong>ابحث عن الشغف:</strong> ما الذي يجعلك تشعر بالحيوية؟</li>
+                <li><strong>ساهم في شيء أكبر:</strong> تطوع، ساعد الآخرين، كن جزءاً من قضية.</li>
+                <li><strong>مارس الامتنان:</strong> ركز على ما تملك بدلاً مما تفتقده.</li>
+                <li><strong>تعلم من التحديات:</strong> ابحث عن الدروس في الصعوبات.</li>
+            </ul>
+            <div class="note">نصيحة: الأشخاص الذين يعيشون حياة ذات معنى يتمتعون بصحة نفسية أفضل ويتعافون أسرع من المحن.</div>
+        </article>
+
+        <article class="card" id="mistakes">
+            <h2>8) أخطاء شائعة تضر بالصحة النفسية</h2>
+            <ul>
+                <li>لا تكتم مشاعرك - المشاعر المكبوتة تظهر بشكل أعراض جسدية ونفسية.</li>
+                <li>لا تهمل احتياجاتك الأساسية - النوم، الطعام، الراحة.</li>
+                <li>لا تقارن نفسك بالآخرين - كل شخص له رحلته وتحدياته.</li>
+                <li>لا تبق في علاقات سامة - الصحة النفسية تبدأ ببيئة صحية.</li>
+                <li>لا تنتظر حتى تصل لمرحلة الإرهاق - اعتني بنفسك باستباقية.</li>
+                <li>لا تخجل من طلب المساعدة - القوة الحقيقية في الاعتراف بالحاجة للدعم.</li>
+            </ul>
+        </article>
+
+        <footer>
+            © 2025 — دليل الصحة النفسية والسلام الداخلي
+        </footer>
+    </div>
+</body>
+</html>
