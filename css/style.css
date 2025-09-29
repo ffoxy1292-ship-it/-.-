@@ -1,0 +1,23 @@
+.articles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.article-link {
+    display: block;
+    padding: 15px 20px;
+    background: white;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.article-link:hover {
+    background: #e91e63;
+    color: white;
+    transform: translateY(-2px);
+}
