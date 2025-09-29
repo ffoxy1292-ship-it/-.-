@@ -8,7 +8,7 @@
 }
 
 .articles-list a {
-    display: block;
+    display: flex-wrap;
     padding: 15px 20px;
     background: #FFB6C1;
     border-radius: 5px;
