@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدراسة الفعالة وتقسيم الوقت - دليل الطالب المتفوق</title>
+    <style>
+        :root {
+            --bg: #f0f9ff;
+            --card: #ffffff;
+            --accent: #0ea5e9;
+            --accent2: #3b82f6;
+            --muted: #556274;
+            --ok: #10b981;
+            --warn: #f59e0b;
+            --maxW: 980px;
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Tahoma, Arial, system-ui;
+            line-height: 1.7;
+            background: var(--bg);
+            color: #0b1320;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: var(--maxW);
+            margin: 0 auto;
+            padding: 12px;
+        }
+
+        .header {
+            background: var(--card);
+            padding: 18px;
+            border-radius: var(--radius);
+            box-shadow: 0 8px 30px rgba(12, 18, 32, .06);
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header .text {
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: var(--accent);
+            font-size: 20px;
+        }
+
+        .header p {
+            margin: 6px 0 0;
+            color: var(--muted);
+        }
+
+        .header img {
+            width: 220px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex: 0 0 220px;
+        }
+
+        /* content cards */
+        .card {
+            background: var(--card);
+            padding: 16px;
+            border-radius: 12px;
+            margin-top: 14px;
+            border: 1px solid rgba(12, 18, 32, .03);
+        }
+
+        h2 {
+            color: var(--accent);
+            margin: 10px 0 8px;
+        }
+
+        h3 {
+            color: var(--accent2);
+            margin: 8px 0;
+        }
+
+        p, li {
+            color: #0b1320;
+        }
+
+        ul, ol {
+            margin: 8px 0 12px;
+            padding-left: 18px;
+        }
+
+        img.res {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 12px 0;
+            display: block;
+        }
+
+        .note {
+            background: #ecfffa;
+            border-left: 4px solid var(--ok);
+            padding: 10px;
+            border-radius: 8px;
+            color: #024a3f;
+        }
+
+        .warn {
+            background: #fff8e6;
+            border-left: 4px solid var(--warn);
+            padding: 10px;
+            border-radius: 8px;
+            color: #5a3d00;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #eef2f6;
+            text-align: center;
+        }
+
+        thead {
+            background: #f8fbff;
+            color: var(--muted);
+        }
+
+        .cta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .btn {
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-weight: 800;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .small {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            margin: 18px 0;
+            font-size: 13px;
+        }
+
+        /* TEXT WRAP + FLEX FIXES for mobile (fixes word-per-line issue) */
+        header .text, .header, .card, .container {
+            word-break: normal;
+            hyphens: auto;
+        }
+
+        a {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        /* Responsive: stack header on small screens, image full-width */
+        @media (max-width: 720px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 14px;
+            }
+
+            .header img {
+                width: 100%;
+                height: auto;
+                flex: 0 0 auto;
+                order: -1;
+            }
+
+            .header h1 {
+                font-size: 18px;
+            }
+
+            body {
+                padding: 12px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "HowTo",
+                "name": "الدراسة الفعالة وتقسيم الوقت",
+                "step": [
+                    {
+                        "@type": "HowToStep",
+                        "name": "تخطيط الجدول الزمني",
+                        "text": "ضع جدولاً واقعياً يوزع المهام الدراسية على فترات متفرقة مع مراعاة فترات الراحة."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "تطبيق تقنية البومودورو",
+                        "text": "ادرس لمدة 25-30 دقيقة ثم خذ استراحة 5 دقائق لتحسين التركيز والإنتاجية."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "تنظيم بيئة الدراسة",
+                        "text": "جهز مكاناً هادئاً ومريحاً خالياً من المشتتات للدراسة المركزة."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "مراجعة وتقييم الأداء",
+                        "text": "راجع تقدمك أسبوعياً وعدّل خطتك حسب الحاجة لتحقيق أفضل النتائج."
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "كم ساعة يجب أن أدرس يومياً؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "يعتمد على المرحلة الدراسية والمادة، لكن 3-5 ساعات مقسمة على فترات تعتبر مثالية لمعظم الطلاب."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "كيف أتغلب على التسويف والمماطلة؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "ابدأ بمهام صغيرة، كافئ نفسك بعد الإنجاز، واستخدم تقنية البومودورو لتحفيز نفسك على البدء."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "هل الدراسة الجماعية مفيدة؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "نعم، لكن بشروط: مجموعة صغيرة (3-5 أشخاص)، تركيز على المناقشة وشرح المفاصل الصعبة، وتجنب التحول إلى جلسة اجتماعية."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header" role="banner">
+            <div class="text">
+                <h1>الدراسة الفعالة وتقسيم الوقت - دليل الطالب المتفوق</h1>
+                <p class="small">استراتيجيات مثبتة علمياً لتحقيق أفضل النتائج الدراسية مع الحفاظ على التوازن في الحياة</p>
+            </div>
+            <img alt="طالب يدرس على مكتب منظم" src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop" />
+        </header>
+
+        <!-- Table of contents -->
+        <nav aria-label="فهرس المحتوى" class="card">
+            <strong>فهرس سريع:</strong>
+            <ul style="margin: 8px 0 0; padding-left: 18px;">
+                <li><a href="#planning">تخطيط الدراسة</a></li>
+                <li><a href="#techniques">تقنيات الدراسة الفعالة</a></li>
+                <li><a href="#time-management">إدارة الوقت</a></li>
+                <li><a href="#environment">بيئة الدراسة</a></li>
+                <li><a href="#focus">تحسين التركيز</a></li>
+                <li><a href="#health">الصحة والعقل</a></li>
+                <li><a href="#exams">الاستعداد للامتحانات</a></li>
+                <li><a href="#mistakes">أخطاء شائعة</a></li>
+            </ul>
+        </nav>
+
+        <!-- Article -->
+        <article class="card" id="planning">
+            <h2>1) تخطيط الدراسة - الأساس الذي يضمن نجاحك</h2>
+            <p>التخطيط الجيد يمنحك رؤية واضحة ويساعدك على تجنب التراكم والضغط الأخير.</p>
+            <ul>
+                <li><strong>التخطيط الأسبوعي:</strong> ضع خطة شاملة للأسبوع تشمل جميع المواد.</li>
+                <li><strong>التخطيط اليومي:</strong> حدد مهام يومك بدقة وواقعية.</li>
+                <li><strong>الأولويات:</strong> رتب المواد حسب الصعوبة والأهمية.</li>
+                <li><strong>المرونة:</strong> اترك مساحة للتعديلات والطوارئ.</li>
+            </ul>
+            <div class="note">خلاصة: خصص 15 دقيقة كل أسبوع للتخطيط توفر عليك ساعات من الدراسة غير المنتجة.</div>
+        </article>
+
+        <article class="card" id="techniques">
+            <h2>2) تقنيات الدراسة الفعالة - لا تدرس بجد، ادرس بذكاء</h2>
+            <h3>أفضل التقنيات المثبتة علمياً</h3>
+            <ol>
+                <li><strong>التكرار المتباعد:</strong> مراجعة المعلومة على فترات متباعدة يثبتها في الذاكرة طويلة المدى.</li>
+                <li><strong>التداخل بين المواد:</strong> دراسة أكثر من مادة في الجلسة الواحدة يحسن التعلم.</li>
+                <li><strongالاختبار الذاتي:</strong> اختبر نفسك باستمرار بدلاً من إعادة القراءة فقط.</li>
+                <li><strong>التلخيص والشرح:</strong> اشرح المعلومة بكلماتك الخاصة كما لو أنك تدرسها لشخص آخر.</li>
+            </ol>
+            <h3>تقنية البومودورو الذهبية</h3>
+            <div style="display: grid; gap: 12px;">
+                <div>
+                    <strong>كيف تطبقها؟</strong>
+                    <ul>
+                        <li>ادرس بتركيز لمدة 25-30 دقيقة</li>
+                        <li>خذ استراحة 5 دقائق</li>
+                        <li>كرر الدورة 4 مرات</li>
+                        <li>خذ استراحة طويلة 15-30 دقيقة</li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>فوائدها</strong>
+                    <ul>
+                        <li>تحسين التركيز والانتباه</li>
+                        <li>منع الإرهاق الذهني</li>
+                        <li>زيادة الإنتاجية</li>
+                        <li>تقليل التسويف</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="warn">تحذير: تجنب المذاكرة لساعات طويلة متواصلة - الدماغ يحتاج إلى راحة لمعالجة المعلومات.</div>
+        </article>
+
+        <article class="card" id="time-management">
+            <h2>3) إدارة الوقت - كيف تستثمر كل دقيقة بشكل فعال؟</h2>
+            <h3>استراتيجيات تقسيم الوقت</h3>
+            <ol>
+                <li><strong>جدول زمني واقعي:</strong> لا تملأ كل دقيقة، اترك مساحة للراحة والطوارئ.</li>
+                <li><strong>أوقات الذروة:</strong> حدد الوقت الذي تكون فيه أكثر تركيزاً وخصصه للمواد الصعبة.</li>
+                <li><strong>مهام صغيرة:</strong> قسم المهام الكبيرة إلى مهام صغيرة قابلة للتنفيذ.</li>
+                <li><strong>الحد الزمني:</strong> حدد وقتاً نهائياً لكل مهمة لتجنب الإطالة.</li>
+            </ol>
+            
+            <h3>نموذج جدول يومي مثالي</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>الوقت</th>
+                        <th>النشاط</th>
+                        <th>التفاصيل</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>6:00-7:00</td>
+                        <td>الصباح</td>
+                        <td>رياضة، فطور، تخطيط اليوم</td>
+                    </tr>
+                    <tr>
+                        <td>7:00-9:00</td>
+                        <td>جلسة دراسة 1</td>
+                        <td>المواد الصعبة - 4 جلسات بومودورو</td>
+                    </tr>
+                    <tr>
+                        <td>9:00-9:30</td>
+                        <td>استراحة</td>
+                        <td>وجبة خفيفة، حركة</td>
+                    </tr>
+                    <tr>
+                        <td>9:30-11:30</td>
+                        <td>جلسة دراسة 2</td>
+                        <td>المواد المتوسطة - 4 جلسات بومودورو</td>
+                    </tr>
+                    <tr>
+                        <td>11:30-13:00</td>
+                        <td>استراحة طويلة</td>
+                        <td>غداء، قيلولة، راحة</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note">نتيجة متوقعة: زيادة الإنتاجية بنسبة 40-60% مع تقليل الإرهاق والتوتر.</div>
+        </article>
+
+        <article class="card" id="environment">
+            <h2>4) بيئة الدراسة - اصنع المكان المثالي للتعلم</h2>
+            <ul>
+                <li><strong>الإضاءة:</strong> ضوء طبيعي أو إضاءة جيدة لتقليل إجهاد العينين.</li>
+                <li><strong>الترتيب:</strong> مكتب نظيف ومنظم يزيد التركيز ويقلل التشتت.</li>
+                <li><strong>الراحة:</strong> كرسي مريح وارتفاع مكتب مناسب.</li>
+                <li><strong>الهدوء:</strong> مكان بعيد عن الضوضاء والمقاطعات.</li>
+                <li><strong>الأدوات:</strong> جهز كل ما تحتاجه قبل البدء لتجنب المقاطعات.</li>
+            </ul>
+        </article>
+
+        <article class="card" id="focus">
+            <h2>5) تحسين التركيز - كيف تتغلب على التشتت؟</h2>
+            <p>أساليب مقترحة:</p>
+            <ul>
+                <li><strong>إيقاف الإشعارات:</strong> ضع هاتفك على وضع الصامت أو في غرفة أخرى.</li>
+                <li><strong>تطبيقات التركيز:</strong> استخدم تطبيقات مثل Forest أو Freedom لحجب المواقع المشتتة.</li>
+                <li><strong>تمارين التنفس:</strong> دقيقتان من التنفس العميق قبل البدء تزيد التركيز.</li>
+                <li><strong>الهدف الواضح:</strong> حدد بالضبط ما تريد إنجازه في الجلسة الحالية.</li>
+            </ul>
+            <p>استراتيجية ذكية: ابدأ بالمهمة الأصعب أولاً عندما تكون طاقتك الذهنية في أعلى مستوياتها.</p>
+        </article>
+
+        <article class="card" id="health">
+            <h2>6) الصحة والعقل - لا تهمل صحتك من أجل الدراسة</h2>
+            <ul>
+                <li><strong>النوم:</strong> 7-9 ساعات نوم качественный - الدماغ يتعلم أثناء النوم.</li>
+                <li><strong>التغذية:</strong> وجبات متوازنة، الكثير من الماء، وتجنب السكريات المكررة.</li>
+                <li><strong>الرياضة:</strong> 30 دقيقة يومياً تحسن الدورة الدموية وتزيد التركيز.</li>
+                <li><strong>الراحة:</strong> فترات راحة منتظمة تمنع الإرهاق وتحسن الاستيعاب.</li>
+                <li><strong>التوازن:</strong> خصص وقتاً للهوايات والاجتماعيات لتجنب الاحتراق النفسي.</li>
+            </ul>
+        </article>
+
+        <article class="card" id="exams">
+            <h2>7) الاستعداد للامتحانات - استراتيجيات ما قبل وأثناء الامتحان</h2>
+            <p>خطوات عملية للتحضير المثالي:</p>
+            <ul>
+                <li><strong>المراجعة النشطة:</strong> لا تقرأ فقط، اختبر نفسك واشرح المفاهيم.</li>
+                <li><strong>امتحانات تجريبية:</strong> حل امتحانات سابقة في ظروف مشابهة للامتحان الحقيقي.</li>
+                <li><strong>مراجعة سريعة:</strong> راجع النقاط الرئيسية قبل الامتحان بيوم، لا تدرس معلومات جديدة.</li>
+                <li><strong>ليلة الامتحان:</strong> نام جيداً، لا تسهر، وتناول عشاء خفيف.</li>
+                <li><strong>صبيحة الامتحان:</strong> فطور صحي، مراجعة خفيفة، ووصل مبكراً.</li>
+            </ul>
+            <div class="note">نصيحة: اقرأ جميع الأسئلة أولاً، ابدأ بالأسهل، وراجع إجاباتك قبل التسليم.</div>
+        </article>
+
+        <article class="card" id="mistakes">
+            <h2>8) أخطاء شائعة تجنبها في رحلتك الدراسية</h2>
+            <ul>
+                <li>لا تؤجل الدراسة حتى اللحظة الأخيرة - التراكم يسبب التوتر وضعف الاستيعاب.</li>
+                <li>لا تدرس لساعات طويلة بدون راحة - الجودة أهم من الكمية.</li>
+                <li>لا تهمل الصحة والنوم - العقل السليم في الجسم السليم.</li>
+                <li>لا تقارن نفسك بالآخرين - كل شخص له طريقته وسرعته في التعلم.</li>
+                <li>لا تدرس وأنت مرهق - راحة ساعة أفضل من دراسة ساعة بإرهاق.</li>
+            </ul>
+        </article>
+
+        <footer>
+            © 2025 — دليل الطالب المتفوق
+        </footer>
+    </div>
+</body>
+  </html>
