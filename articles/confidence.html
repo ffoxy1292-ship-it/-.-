@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بناء الثقة في النفس - دليل عملي لاكتساب الثقة الداخلية</title>
+    <style>
+        :root {
+            --bg: #fef7ed;
+            --card: #ffffff;
+            --accent: #f59e0b;
+            --accent2: #d97706;
+            --muted: #556274;
+            --ok: #10b981;
+            --warn: #ef4444;
+            --maxW: 980px;
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Tahoma, system-ui;
+            line-height: 1.7;
+            background: var(--bg);
+            color: #0b1320;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: var(--maxW);
+            margin: 0 auto;
+            padding: 12px;
+        }
+
+        .header {
+            background: var(--card);
+            padding: 18px;
+            border-radius: var(--radius);
+            box-shadow: 0 8px 30px rgba(12, 18, 32, .06);
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header .text {
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: var(--accent);
+            font-size: 20px;
+        }
+
+        .header p {
+            margin: 6px 0 0;
+            color: var(--muted);
+        }
+
+        .header img {
+            width: 220px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex: 0 0 220px;
+        }
+
+        /* content cards */
+        .card {
+            background: var(--card);
+            padding: 16px;
+            border-radius: 12px;
+            margin-top: 14px;
+            border: 1px solid rgba(12, 18, 32, .03);
+        }
+
+        h2 {
+            color: var(--accent);
+            margin: 10px 0 8px;
+        }
+
+        h3 {
+            color: var(--accent2);
+            margin: 8px 0;
+        }
+
+        p, li {
+            color: #0b1320;
+        }
+
+        ul, ol {
+            margin: 8px 0 12px;
+            padding-left: 18px;
+        }
+
+        img.res {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 12px 0;
+            display: block;
+        }
+
+        .note {
+            background: #fffbeb;
+            border-left: 4px solid var(--accent);
+            padding: 10px;
+            border-radius: 8px;
+            color: #92400e;
+        }
+
+        .warn {
+            background: #fef2f2;
+            border-left: 4px solid var(--warn);
+            padding: 10px;
+            border-radius: 8px;
+            color: #991b1b;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #fef3c7;
+            text-align: center;
+        }
+
+        thead {
+            background: #fffbeb;
+            color: var(--muted);
+        }
+
+        .cta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .btn {
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-weight: 800;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .small {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            margin: 18px 0;
+            font-size: 13px;
+        }
+
+        /* TEXT WRAP + FLEX FIXES for mobile (fixes word-per-line issue) */
+        header .text, .header, .card, .container {
+            word-break: normal;
+            hyphens: auto;
+        }
+
+        a {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        /* Responsive: stack header on small screens, image full-width */
+        @media (max-width: 720px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 14px;
+            }
+
+            .header img {
+                width: 100%;
+                height: auto;
+                flex: 0 0 auto;
+                order: -1;
+            }
+
+            .header h1 {
+                font-size: 18px;
+            }
+
+            body {
+                padding: 12px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "HowTo",
+                "name": "بناء الثقة في النفس",
+                "step": [
+                    {
+                        "@type": "HowToStep",
+                        "name": "التعرف على نقاط القوة",
+                        "text": "اكتشف مواهبك وقدراتك الفريدة وابدأ في الاعتراف بها وتقديرها."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "تحدي الأفكار السلبية",
+                        "text": "تعلم كيفية التعرف على الأفكار المحبطة واستبدالها بأفكار إيجابية وواقعية."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "مواجهة المخاوف تدريجياً",
+                        "text": "اخرج من منطقة الراحة بخطوات صغيرة ومتتالية لبناء الثقة."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "ممارسة الحديث الإيجابي مع الذات",
+                        "text": "عامل نفسك بلطف وتشجيع كما تعامل صديقاً عزيزاً."
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "كم من الوقت يستغرق بناء الثقة في النفس؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "يمكن ملاحظة تحسن ملحوظ خلال 4-8 أسابيع من الممارسة المنتظمة، لكن بناء الثقة رحلة مستمرة."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "هل يمكن أن يفقد الإنسان ثقته بنفسه مرة أخرى؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "نعم، الثقة تتأثر بالتجارب والظروف، لكن بمجرد تعلم مهارات بناء الثقة، يصبح من الأسهل استعادتها بسرعة."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "ما الفرق بين الثقة في النفس والغرور؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "الثقة الحقيقية هادئة ومستقرة ولا تحتاج لإثبات، بينما الغرور ضجيج خارجي يخفي عدم الأمان الداخلي."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header" role="banner">
+            <div class="text">
+                <h1>بناء الثقة في النفس - دليل عملي لاكتساب الثقة الداخلية</h1>
+                <p class="small">اكتشف أسرار الثقة الحقيقية وتعلم كيف تبني ثقة راسخة تنبع من داخلك وتظهر في كل جوانب حياتك</p>
+            </div>
+            <img alt="شخص واثق من نفسه يقف بمهابة وثبات" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop" />
+        </header>
+
+        <!-- Table of contents -->
+        <nav aria-label="فهرس المحتوى" class="card">
+            <strong>فهرس سريع:</strong>
+            <ul style="margin: 8px 0 0; padding-left: 18px;">
+                <li><a href="#understanding">فهم الثقة الحقيقية</a></li>
+                <li><a href="#foundation">أسس بناء الثقة</a></li>
+                <li><a href="#mindset">عقلية الواثق</a></li>
+                <li><a href="#skills">مهارات عملية</a></li>
+                <li><a href="#body-language">لغة الجسد الواثقة</a></li>
+                <li><a href="#challenges">تحديات يومية</a></li>
+                <li><a href="#mistakes">أخطاء شائعة</a></li>
+            </ul>
+        </nav>
+
+        <!-- Article -->
+        <article class="card" id="understanding">
+            <h2>1) فهم الثقة الحقيقية - ليست ما تظنه</h2>
+            <p>الثقة الحقيقية ليست غياب الخوف، بل الشجاعة للمضي قدماً رغم الخوف.</p>
+            <ul>
+                <li><strong>ليست كمالاً:</strong> الواثقون يعترفون بأخطائهم ويتعلمون منها.</li>
+                <li><strong>ليست مقارنة:</strong> الثقة تنبع من الداخل، لا من التفوق على الآخرين.</li>
+                <li><strong>ليست دائمة:</strong> تختلف حسب الظروف، لكن يمكن استعادتها بسرعة.</li>
+                <li><strong>قابلة للبناء:</strong> ليست صفة موروثة، بل مهارة يمكن تطويرها.</li>
+                <li><strong>مترابطة:</strong> ثقتك في مجال تؤثر إيجاباً على مجالات أخرى.</li>
+            </ul>
+            <div class="note">خلاصة: الثقة ليست حالة دائمة من الشعور بالقوة، بل هي القدرة على التصرف بفعالية رغم الشكوك.</div>
+        </article>
+
+        <article class="card" id="foundation">
+            <h2>2) أسس بناء الثقة - الأعمدة السبعة للثقة الراسخة</h2>
+            <h3>ركائز الثقة المتينة</h3>
+            <ol>
+                <li><strong>معرفة الذات:</strong> فهم نقاط قوتك وضعفك وقيمك الحقيقية.</li>
+                <li><strong>الكفاءة:</strong> تطوير المهارات والخبرات في مجالات تهمك.</li>
+                <li><strong>التقدير الذاتي:</strong> تقبل ذاتك واحترامها بكل ما فيها.</li>
+                <li><strong>الاستقلالية:</strong> القدرة على اتخاذ القرارات وتحمل مسؤوليتها.</li>
+                <li><strong>المرونة:</strong> التعافي من الفشل والخيبة بسرعة.</li>
+                <li><strong>العلاقات الصحية:</strong> إحاطة نفسك بأشخاص يدعمون نموك.</li>
+                <li><strong>الهدف:</strong> وجود رسالة وقيم توجه حياتك.</li>
+            </ol>
+            <h3>كيف تبني كل ركيزة؟</h3>
+            <div style="display: grid; gap: 12px;">
+                <div>
+                    <strong>معرفة الذات</strong>
+                    <ul>
+                        <li>اكتب قائمة بنقاط قوتك</li>
+                        <li>اطلب feedback بناء من المقربين</li>
+                        <li>جرب أنشطة جديدة لاكتشاف مواهب خفية</li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>بناء الكفاءة</strong>
+                    <ul>
+                        <li>تعلم مهارة جديدة كل 3 أشهر</li>
+                        <li>تدرب بانتظام على ما تتعلمه</li>
+                        <li>احتفل بتقدمك ولو كان بسيطاً</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="warn">تحذير: لا تحاول بناء كل الركائز مرة واحدة - ركز على واحدة أو اثنتين في كل مرحلة.</div>
+        </article>
+
+        <article class="card" id="mindset">
+            <h2>3) عقلية الواثق - كيف يفكر الواثقون؟</h2>
+            <h3>تحويل الأفكار المحبطة</h3>
+            <ol>
+                <li><strong>من "لا أستطيع" إلى "لم أتعلم بعد":</strong> الفشل تجربة تعلم، ليس حكماً نهائياً.</li>
+                <li><strong>من "ماذا سيفكرون؟" إلى "ماذا أريد أنا؟":</strong> ركز على قيمك، ليس آراء الآخرين.</li>
+                <li><strong>من "هذا صعب" إلى "هذا تحدي":</strong> الصعوبات فرص للنمو، ليس عقبات.</li>
+                <li><strong>من "أنا خائف" إلى "أنا شجاع":</strong> اعترف بالخوف ثم تصرف بشجاعة.</li>
+            </ol>
+            
+            <h3>تمارين يومية لبناء العقلية الواثقة</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>التمرين</th>
+                        <th>كيفية التطبيق</th>
+                        <th>الوقت المطلوب</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>التأكيدات الإيجابية</td>
+                        <td>كرر عبارات إيجابية عن نفسك يومياً</td>
+                        <td>3 دقائق</td>
+                    </tr>
+                    <tr>
+                        <td>سجل الإنجازات</td>
+                        <td>اكتب 3 إنجازات يومية مهما كانت صغيرة</td>
+                        <td>5 دقائق</td>
+                    </tr>
+                    <tr>
+                        <td>التخيل الإيجابي</td>
+                        <td>تخيل نفسك تتصرف بثقة في مواقف قادمة</td>
+                        <td>5 دقائق</td>
+                    </tr>
+                    <tr>
+                        <td>مراجعة النجاحات</td>
+                        <td>استرجع نجاحات سابقة وأسبابها</td>
+                        <td>7 دقائق</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note">نتيجة متوقعة: تحسن ملحوظ في الثقة خلال 21 يوماً من الممارسة اليومية المنتظمة.</div>
+        </article>
+
+        <article class="card" id="skills">
+            <h2>4) مهارات عملية - أدوات للثقة اليومية</h2>
+            <ul>
+                <li><strong>اتخاذ القرارات:</strong> تدرب على اتخاذ قرارات صغيرة بسرعة.</li>
+                <li><strong>التحدث بوضوح:</strong> تعلم التعبير عن أفكارك بثقة ووضوح.</li>
+                <li><strong>قول "لا":</strong> تعلم رفض ما لا يتوافق مع قيمك واهتماماتك.</li>
+                <li><strong>تقبل المجاملات:</strong> تعلم قبول المدح بشكر دون تبرير أو إنكار.</li>
+                <li><strong>طلب المساعدة:</strong> الثقة الحقيقية تعترف بالحاجة للدعم أحياناً.</li>
+                <li><strong>تقدير الذات:</strong> عامل نفسك بلطف كما تعامل صديقاً عزيزاً.</li>
+            </ul>
+        </article>
+
+        <article class="card" id="body-language">
+            <h2>5) لغة الجسد الواثقة - كيف تتحدث بثقة بدون كلمات</h2>
+            <p>لغة الجسد تنقل 55% من رسالتك - اجعلها تعمل لصالحك:</p>
+            <ul>
+                <li><strong>الوقوف المستقيم:</strong> ظهر مستقيم، كتفان للخلف، رأس مرفوع.</li>
+                <li><strong>الاتصال البصري:</strong> حافظ على اتصال بصري 60-70% من الوقت.</li>
+                <li><strong>الإيماءات الواثقة:</strong> استخدم يديك بشكل طبيعي أثناء الحديث.</li>
+                <li><strong>الابتسامة الخفيفة:</strong> ابتسامة خفيفة تنقل الود والثقة.</li>
+                <li><strong>المساحة الشخصية:</strong> اقف بطريقة مريحة تظهر الراحة في محيطك.</li>
+                <li><strong>نبرة الصوت:</strong> تكلم بوضوح وبطء معتدل، تجنب التردد.</li>
+            </ul>
+            <p>استراتيجية ذكية: تدرب على لغة الجسد الواثقة أمام المرآة 5 دقائق يومياً.</p>
+        </article>
+
+        <article class="card" id="challenges">
+            <h2>6) تحديات يومية - خطط عملية لمواقف حقيقية</h2>
+            <p>كيف تتعامل بثقة مع المواقف التالية:</p>
+            <ul>
+                <li><strong>في الاجتماعات:</strong> ابدأ بالتحدث في أول 10 دقائق، ولو بسؤال بسيط.</li>
+                <li><strong>في المناسبات الاجتماعية:</strong> ابدأ محادثة مع شخص واحد بدلاً من مجموعة.</li>
+                <li><strong>عند تقديم آراء:</strong> استخدم عبارات مثل "أعتقد أن..." أو "من وجهة نظري...".</li>
+                <li><strong>عند ارتكاب أخطاء:</strong> اعترف بالخطأ وقدم حلاً بدلاً من الاعتذار باستمرار.</li>
+                <li><strong>في المقابلات الشخصية:</strong> ركز على ما تقدمه، ليس على ما تحتاجه.</li>
+                <li><strong>عند التعرض للنقد:</strong> استمع، خذ ما يفيدك، وتجاهل الباقي بلطف.</li>
+            </ul>
+            <div class="note">نصيحة: ابدأ بأسهل التحديات وزد الصعوبة تدريجياً - كل نجاح يبني ثقة للخطوة التالية.</div>
+        </article>
+
+        <article class="card" id="mistakes">
+            <h2>7) أخطاء شائعة تدمر الثقة - تجنبها!</h2>
+            <ul>
+                <li>لا تقارن بدايتك بنهاية غيرك - كل شخص له رحلته المختلفة.</li>
+                <li>لا تنتظر الشعور الكامل بالثقة - التصرف يأتي أولاً ثم الشعور.</li>
+                <li>لا تحاول إرضاء الجميع - استحالة إرضاء الناس كلهم هدف غير واقعي.</li>
+                <li>لا تبالغ في تحضير كل كلمة - التلقائية أصدق تعبير عن الثقة.</li>
+                <li>لا تهرب من المواقف الصعبة - التجنب يزيد الخوف ويقلل الثقة.</li>
+                <li>لا تهمل نجاحاتك الصغيرة - احتفل بكل تقدم مهما بدا بسيطاً.</li>
+                <li>لا تستسلم بعد أول فشل - الناجحون يفشلون أكثر من غيرهم.</li>
+            </ul>
+        </article>
+
+        <footer>
+            © 2025 — دليل بناء الثقة في النفس والتمكين الذاتي
+        </footer>
+    </div>
+</body>
+</html>
