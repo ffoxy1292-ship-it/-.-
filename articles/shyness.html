@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التخلص من الخجل الزائد - دليل عملي لبناء الثقة الاجتماعية</title>
+    <style>
+        :root {
+            --bg: #fff7ed;
+            --card: #ffffff;
+            --accent: #ea580c;
+            --accent2: #dc2626;
+            --muted: #556274;
+            --ok: #10b981;
+            --warn: #f59e0b;
+            --maxW: 980px;
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Tahoma, Arial, system-ui;
+            line-height: 1.7;
+            background: var(--bg);
+            color: #0b1320;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: var(--maxW);
+            margin: 0 auto;
+            padding: 12px;
+        }
+
+        .header {
+            background: var(--card);
+            padding: 18px;
+            border-radius: var(--radius);
+            box-shadow: 0 8px 30px rgba(12, 18, 32, .06);
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header .text {
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: var(--accent);
+            font-size: 20px;
+        }
+
+        .header p {
+            margin: 6px 0 0;
+            color: var(--muted);
+        }
+
+        .header img {
+            width: 220px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex: 0 0 220px;
+        }
+
+        /* content cards */
+        .card {
+            background: var(--card);
+            padding: 16px;
+            border-radius: 12px;
+            margin-top: 14px;
+            border: 1px solid rgba(12, 18, 32, .03);
+        }
+
+        h2 {
+            color: var(--accent);
+            margin: 10px 0 8px;
+        }
+
+        h3 {
+            color: var(--accent2);
+            margin: 8px 0;
+        }
+
+        p, li {
+            color: #0b1320;
+        }
+
+        ul, ol {
+            margin: 8px 0 12px;
+            padding-left: 18px;
+        }
+
+        img.res {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 12px 0;
+            display: block;
+        }
+
+        .note {
+            background: #fff7ed;
+            border-left: 4px solid var(--accent);
+            padding: 10px;
+            border-radius: 8px;
+            color: #9a3412;
+        }
+
+        .warn {
+            background: #fff8e6;
+            border-left: 4px solid var(--warn);
+            padding: 10px;
+            border-radius: 8px;
+            color: #5a3d00;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #fef3c7;
+            text-align: center;
+        }
+
+        thead {
+            background: #fffbeb;
+            color: var(--muted);
+        }
+
+        .cta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .btn {
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-weight: 800;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .small {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            margin: 18px 0;
+            font-size: 13px;
+        }
+
+        /* TEXT WRAP + FLEX FIXES for mobile (fixes word-per-line issue) */
+        header .text, .header, .card, .container {
+            word-break: normal;
+            hyphens: auto;
+        }
+
+        a {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        /* Responsive: stack header on small screens, image full-width */
+        @media (max-width: 720px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 14px;
+            }
+
+            .header img {
+                width: 100%;
+                height: auto;
+                flex: 0 0 auto;
+                order: -1;
+            }
+
+            .header h1 {
+                font-size: 18px;
+            }
+
+            body {
+                padding: 12px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "HowTo",
+                "name": "التخلص من الخجل الزائد",
+                "step": [
+                    {
+                        "@type": "HowToStep",
+                        "name": "فهم أسباب الخجل",
+                        "text": "تعرف على جذور الخجل لديك وتقبل أن الخجل الطبيعي يختلف عن الخجل الزائد المعيق."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "مواجهة المخاوف تدريجياً",
+                        "text": "ابدأ بمواقف اجتماعية بسيطة وزد التحدي تدريجياً لبناء الثقة."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "تطوير المهارات الاجتماعية",
+                        "text": "تعلم فنون الحوار والاستماع الفعال ولغة الجسد الإيجابية."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "بناء الثقة بالنفس",
+                        "text": "ركز على نقاط قوتك وإنجازاتك ومارس الحديث الإيجابي مع الذات."
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "كم من الوقت يحتاج التخلص من الخجل الزائد؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "يختلف حسب الشخص، لكن يمكن ملاحظة تحسن ملحوظ خلال 3-6 أشهر من الممارسة المنتظمة والمواجهة التدريجية."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "هل يمكن أن أتخلص من الخجل تماماً؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "الخجل الطبيعي صحي، لكن الخجل الزائد يمكن التغلب عليه بشكل كبير ليصبح مجرد ظل باهت لما كان عليه."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "متى يجب طلب المساعدة المهنية؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "إذا كان الخجل يعيق حياتك اليومية أو يسبب لك اكتئاباً أو قلقاً شديداً، فمن الجيد استشارة مختص."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header" role="banner">
+            <div class="text">
+                <h1>التخلص من الخجل الزائد - دليل عملي لبناء الثقة الاجتماعية</h1>
+                <p class="small">خطوات عملية للتغلب على الخجل المعيق واكتساب ثقة في التعامل مع الآخرين</p>
+            </div>
+            <img alt="شخص يخرج من منطقة الراحة ويتحدث بثقة" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1200&auto=format&fit=crop" />
+        </header>
+
+        <!-- Table of contents -->
+        <nav aria-label="فهرس المحتوى" class="card">
+            <strong>فهرس سريع:</strong>
+            <ul style="margin: 8px 0 0; padding-left: 18px;">
+                <li><a href="#understanding">فهم الخجل</a></li>
+                <li><a href="#causes">أسباب الخجل الزائد</a></li>
+                <li><a href="#exposure">المواجهة التدريجية</a></li>
+                <li><a href="#skills">المهارات الاجتماعية</a></li>
+                <li><a href="#mindset">تغيير العقلية</a></li>
+                <li><a href="#body-language">لغة الجسد</a></li>
+                <li><a href="#practice">تمارين عملية</a></li>
+                <li><a href="#mistakes">أخطاء شائعة</a></li>
+            </ul>
+        </nav>
+
+        <!-- Article -->
+        <article class="card" id="understanding">
+            <h2>1) فهم الخجل - الفرق بين الطبيعي والزائد</h2>
+            <p>الخجل الطبيعي شعور مؤقت، أما الزائد فهو قيد يمنعك من عيش حياتك بشكل كامل.</p>
+            <ul>
+                <li><strong>الخجل الطبيعي:</strong> ارتباك مؤقت في مواقف جديدة، يزول مع التعود.</li>
+                <li><strong>الخجل الزائد:</strong> خوف مستمر من المواقف الاجتماعية، تجنب الناس، تأثير سلبي على الحياة.</li>
+                <li><strong>الرهاب الاجتماعي:</strong> خوف شديد من الأحكام، أعراض جسدية (رعشة، تعرق)، يحتاج مساعدة مهنية.</li>
+                <li><strong>تقبل الذات:</strong> الخجل ليس عيباً في الشخصية، بل هو سلوك متعلم يمكن تغييره.</li>
+            </ul>
+            <div class="note">خلاصة: الخجل الزائد ليس جزءاً من شخصيتك، بل هو عادة يمكن كسرها بالتدريب المستمر.</div>
+        </article>
+
+        <article class="card" id="causes">
+            <h2>2) أسباب الخجل الزائد - اعرف عدوك لتنتصر عليه</h2>
+            <h3>الجذور الشائعة للخجل</h3>
+            <ol>
+                <li><strong>التجارب السلبية:</strong> سخرية، تنمر، أو انتقاد قاس في الطفولة.</li>
+                <li><strong>التنشئة:</strong> حماية زائدة أو نقد مستمر من الوالدين.</li>
+                <li><strong>المقارنة:</strong> مقارنة النفس بالآخرين باستمرار.</li>
+                <li><strong>الخوف من الفشل:</strong> توقع الرفض أو الإحراج.</li>
+                <li><strong>نقص المهارات:</strong> عدم معرفة كيف تتصرف في المواقف الاجتماعية.</li>
+            </ol>
+            <h3>كيف تتعرف على أسباب خجلك؟</h3>
+            <div style="display: grid; gap: 12px;">
+                <div>
+                    <strong>أسئلة مساعدة</strong>
+                    <ul>
+                        <li>متى بدأ الخجل يظهر في حياتي؟</li>
+                        <li>ما هي المواقف التي تزيد خجلي؟</li>
+                        <li>ما الأفكار التي تأتيني قبل المواقف الاجتماعية؟</li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>مفكرة المشاعر</strong>
+                    <ul>
+                        <li>سجل المواقف التي تشعر فيها بالخجل</li>
+                        <li>اكتب الأفكار والمشاعر المصاحبة</li>
+                        <li>حلل الأنماط المتكررة</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="warn">تحذير: لا تلوم نفسك على خجلك - الفهم أول خطوة نحو الحل.</div>
+        </article>
+
+        <article class="card" id="exposure">
+            <h2>3) المواجهة التدريجية - الخروج من منطقة الراحة بأمان</h2>
+            <h3>سلم المواجهة الاجتماعي</h3>
+            <ol>
+                <li><strong>البداية:</strong> الابتسام لشخص غريب، تبادل التحية مع الجيران.</li>
+                <li><strong>التحدي المتوسط:</strong> إبداء رأي في مجموعة صغيرة، طرح سؤال في الاجتماع.</li>
+                <li><strong>التحدي المتقدم:</strong> إلقاء كلمة قصيرة، حضور مناسبة اجتماعية كبيرة.</li>
+                <li><strong>الإتقان:</strong> التحدث أمام جمهور، قيادة نقاش جماعي.</li>
+            </ol>
+            
+            <h3>خطة الأسبوع الأول</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>اليوم</th>
+                        <th>التحدي</th>
+                        <th>الوقت المقدر</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>الإثنين</td>
+                        <td>الابتسام لـ 5 أشخاص غرباء</td>
+                        <td>طوال اليوم</td>
+                    </tr>
+                    <tr>
+                        <td>الثلاثاء</td>
+                        <td>تبادل التحية مع البائع</td>
+                        <td>دقيقتان</td>
+                    </tr>
+                    <tr>
+                        <td>الأربعاء</td>
+                        <td>سؤال عن السعر أو الاتجاهات</td>
+                        <td>3 دقائق</td>
+                    </tr>
+                    <tr>
+                        <td>الخميس</td>
+                        <td>إبداء مجاملة لزميل</td>
+                        <td>دقيقتان</td>
+                    </tr>
+                    <tr>
+                        <td>الجمعة</td>
+                        <td>المشاركة برأي في محادثة</td>
+                        <td>5 دقائق</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="note">نتيجة متوقعة: انخفاض القلق الاجتماعي بنسبة 40-60% خلال 4-6 أسابيع من الممارسة المنتظمة.</div>
+        </article>
+
+        <article class="card" id="skills">
+            <h2>4) المهارات الاجتماعية - أدوات التفاعل الناجح</h2>
+            <ul>
+                <li><strong>فن بدء المحادثة:</strong> ابدأ بموضوع عام (الطقس، حدث محلي).</li>
+                <li><strong>الاستماع الفعال:</strong> انتبه، أظهر اهتماماً، اسأل أسئلة مفتوحة.</li>
+                <li><strong>فن السؤال:</strong> استخدم أسئلة تبدأ بـ (ماذا، كيف، لماذا).</li>
+                <li><strong>المحادثة المتوازنة:</strong> لا تتحدث كثيراً ولا قليلاً جداً.</li>
+                <li><strong>إنهاء المحادثة:</strong> اختتم بلطف عندما يحين الوقت.</li>
+            </ul>
+        </article>
+
+        <article class="card" id="mindset">
+            <h2>5) تغيير العقلية - من الضحية إلى البطل</h2>
+            <p>تقنيات إعادة صياغة التفكير:</p>
+            <ul>
+                <li><strong>تحدي الأفكار السلبية:</strong> "لا أحد يهتم بي" → "كل شخص مشغول بحياته".</li>
+                <li><strong>التعاطف الذاتي:</strong> عامل نفسك كما تعامل صديقاً خجولاً.</li>
+                <li><strong>توقع النجاح:</strong> تخيل نفسك تتصرف بثقة قبل الموقف.</li>
+                <li><strong>تقبل عدم الكمال:</strong> الجميع يرتكب أخطاء اجتماعية أحياناً.</li>
+                <li><strong>التركيز على الآخرين:</strong> فكر في جعل الآخرين مرتاحين بدلاً من التركيز على نفسك.</li>
+            </ul>
+            <p>استراتيجية ذكية: اكتب 3 نقاط قوة اجتماعية تمتلكها وراجعها يومياً.</p>
+        </article>
+
+        <article class="card" id="body-language">
+            <h2>6) لغة الجسد الواثقة - كيف تبدو وتشعر بثقة أكبر</h2>
+            <ul>
+                <li><strong>الوقوف المستقيم:</strong> ظهر مستقيم، كتفان للخلف، رأس مرفوع.</li>
+                <li><strong>الاتصال البصري:</strong> حافظ على اتصال بصري 60-70% من الوقت.</li>
+                <li><strong>الابتسامة:</strong> ابتسامة خفيفة تظهر الود والانفتاح.</li>
+                <li><strong>الإيماءات:</strong> استخدام اليدين بشكل طبيعي أثناء الحديث.</li>
+                <li><strong>المساحة الشخصية:</strong> اقف بطريقة مريحة دون التعدي على مساحة الآخرين.</li>
+                <li><strong>نبرة الصوت:</strong> تكلم بوضوح وبطء معتدل.</li>
+            </ul>
+        </article>
+
+        <article class="card" id="practice">
+            <h2>7) تمارين عملية - من النظرية إلى التطبيق</h2>
+            <p>تمارين يومية لبناء الثقة:</p>
+            <ul>
+                <li><strong>تمرين المرآة:</strong> تدرب على الحديث أمام المرآة 5 دقائق يومياً.</li>
+                <li><strong>تمارين التنفس:</strong> تنفس عميق قبل المواقف الاجتماعية.</li>
+                <li><strong>لعب الأدوار:</strong> تدرب على مواقف اجتماعية مع صديق موثوق.</li>
+                <li><strong>تسجيل الصوت:</strong> سجل صوتك واستمع إليه لتحسين نبرتك.</li>
+                <li><strong>الانضمام لمجموعات:</strong> انضم لنادي كتاب أو مجموعة هوايات.</li>
+                <li><strong>التطوع:</strong> العمل التطوعي يضعك في مواقف اجتماعية إيجابية.</li>
+            </ul>
+            <div class="note">نصيحة: امدح نفسك على كل تقدم صغير - الاحتفاء بالإنجازات يبني الثقة.</div>
+        </article>
+
+        <article class="card" id="mistakes">
+            <h2>8) أخطاء شائعة تعيق التخلص من الخجل</h2>
+            <ul>
+                <li>لا تتجنب المواقف الاجتماعية - التجنب يزيد الخجل.</li>
+                <li>لا تنتظر حتى تشعر بالثقة - التصرف بثقة يأتي أولاً ثم الشعور بالثقة.</li>
+                <li>لا تبالغ في تحضير ما ستقوله - المحادثات العفوية أكثر صدقاً.</li>
+                <li>لا تضع توقعات غير واقعية - التحسن يحتاج وقتاً وممارسة.</li>
+                <li>لا تقارن بدايتك بذروة غيرك - كل شخص له رحلته.</li>
+                <li>لا تستسلم بعد الفشل - كل تجربة هي خطوة نحو التحسن.</li>
+            </ul>
+        </article>
+
+        <footer>
+            © 2025 — دليل التغلب على الخجل وبناء الثقة الاجتماعية
+        </footer>
+    </div>
+</body>
+  </html>
