@@ -1,6 +1,6 @@
 .articles-list {
-    display: grid;
-    flex-direction: wrap;
+    display: flex;
+    flex-direction: column;
     gap: 15px;
     margin-top: 30px;
     list-style: none; /* إزالة النقاط */
@@ -8,9 +8,9 @@
 }
 
 .articles-list a {
-    display: flex-wrap;
+    display: block;
     padding: 15px 20px;
-    background: #FFB6C1;
+    background: white;
     border-radius: 5px;
     text-decoration: none;
     color: #333;
@@ -19,7 +19,7 @@
 }
 
 .articles-list a:hover {
-    background: #e91e63;
+    background: #FFE6EA;
     color: white;
     transform: translateY(-2px);
 }
