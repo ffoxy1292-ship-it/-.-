@@ -3,9 +3,11 @@
     flex-direction: column;
     gap: 15px;
     margin-top: 30px;
+    list-style: none; /* إزالة النقاط */
+    padding: 0;
 }
 
-.article-link {
+.articles-list a {
     display: block;
     padding: 15px 20px;
     background: white;
@@ -16,7 +18,7 @@
     transition: all 0.3s;
 }
 
-.article-link:hover {
+.articles-list a:hover {
     background: #e91e63;
     color: white;
     transform: translateY(-2px);
