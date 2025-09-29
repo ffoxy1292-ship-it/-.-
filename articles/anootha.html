@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إتقان فن الأنوثة - دليل شامل للمرأة العصرية</title>
+    <style>
+        :root {
+            --bg: #fdf2f8;
+            --card: #ffffff;
+            --accent: #ec4899;
+            --accent2: #a855f7;
+            --muted: #6b7280;
+            --ok: #10b981;
+            --warn: #f59e0b;
+            --maxW: 980px;
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Tahoma, Arial, system-ui;
+            line-height: 1.7;
+            background: var(--bg);
+            color: #0b1320;
+            padding: 16px;
+        }
+
+        .container {
+            max-width: var(--maxW);
+            margin: 0 auto;
+            padding: 12px;
+        }
+
+        .header {
+            background: var(--card);
+            padding: 18px;
+            border-radius: var(--radius);
+            box-shadow: 0 8px 30px rgba(12, 18, 32, .06);
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .header .text {
+            flex: 1 1 auto;
+            min-width: 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: var(--accent);
+            font-size: 20px;
+        }
+
+        .header p {
+            margin: 6px 0 0;
+            color: var(--muted);
+        }
+
+        .header img {
+            width: 220px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex: 0 0 220px;
+        }
+
+        /* content cards */
+        .card {
+            background: var(--card);
+            padding: 16px;
+            border-radius: 12px;
+            margin-top: 14px;
+            border: 1px solid rgba(12, 18, 32, .03);
+        }
+
+        h2 {
+            color: var(--accent);
+            margin: 10px 0 8px;
+        }
+
+        h3 {
+            color: var(--accent2);
+            margin: 8px 0;
+        }
+
+        p, li {
+            color: #0b1320;
+        }
+
+        ul, ol {
+            margin: 8px 0 12px;
+            padding-left: 18px;
+        }
+
+        img.res {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 12px 0;
+            display: block;
+        }
+
+        .note {
+            background: #fce7f3;
+            border-left: 4px solid var(--accent);
+            padding: 10px;
+            border-radius: 8px;
+            color: #831843;
+        }
+
+        .warn {
+            background: #fff8e6;
+            border-left: 4px solid var(--warn);
+            padding: 10px;
+            border-radius: 8px;
+            color: #5a3d00;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #fdf2f8;
+            text-align: center;
+        }
+
+        thead {
+            background: #fdf2f8;
+            color: var(--muted);
+        }
+
+        .cta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .btn {
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-weight: 800;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .small {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted);
+            margin: 18px 0;
+            font-size: 13px;
+        }
+
+        /* TEXT WRAP + FLEX FIXES for mobile (fixes word-per-line issue) */
+        header .text, .header, .card, .container {
+            word-break: normal;
+            hyphens: auto;
+        }
+
+        a {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        /* Responsive: stack header on small screens, image full-width */
+        @media (max-width: 720px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 14px;
+            }
+
+            .header img {
+                width: 100%;
+                height: auto;
+                flex: 0 0 auto;
+                order: -1;
+            }
+
+            .header h1 {
+                font-size: 18px;
+            }
+
+            body {
+                padding: 12px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "HowTo",
+                "name": "إتقان فن الأنوثة",
+                "step": [
+                    {
+                        "@type": "HowToStep",
+                        "name": "الوعي بالذات",
+                        "text": "تعرفي على نقاط قوتك، اهتماماتك، وقيمك الأساسية لتطوير أنوثة أصيلة."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "الرعاية الذاتية",
+                        "text": "اهتمي بصحتك الجسدية والنفسية والعاطفية كأساس للأنوثة المتوازنة."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "تطوير الذكاء العاطفي",
+                        "text": "تعلمي فهم مشاعرك والتعبير عنها بذكاء وحكمة."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "name": "التواصل الفعال",
+                        "text": "طوّري أسلوبك في التواصل مع الآخرين بلطف وثقة."
+                    }
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "هل الأنوثة مرتبطة بالمظهر فقط؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "لا، الأنوثة الحقيقية تتجاوز المظهر لتشمل الطاقة، الشخصية، والطريقة التي تتعاملين بها مع نفسك والآخرين."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "كيف أطور أنوثتي دون فقدان شخصيتي؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "الأنوثة الحقيقية هي تعزيز نقاط قوتك الفريدة، وليس تغيير شخصيتك. ابحثي عن التوازن بين أنوثتك وشخصيتك الأصيلة."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "هل يمكنني أن أكون أنثوية وقوية في نفس الوقت؟",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "بالتأكيد! الأنوثة والقوة ليسا متناقضين. في الواقع، الأنوثة المتوازنة مصدر قوة حقيقية."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header" role="banner">
+            <div class="text">
+                <h1>إتقان فن الأنوثة - دليل شامل للمرأة العصرية</h1>
+                <p class="small">اكتشفي قوة أنوثتك الحقيقية - توازن بين الجاذبية، الثقة، والقوة الداخلية</p>
+            </div>
+            <img alt="امرأة واثقة وجذابة تبتسم" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop" />
+        </header>
+
+        <!-- Table of contents -->
+        <nav aria-label="فهرس المحتوى" class="card">
+            <strong>فهرس سريع:</strong>
+            <ul style="margin: 8px 0 0; padding-left: 18px;">
+                <li><a href="#definition">ما هي الأنوثة الحقيقية؟</a></li>
+                <li><a href="#self-awareness">الوعي بالذات</a></li>
+                <li><a href="#self-care">الرعاية الذاتية</a></li>
+                <li><a href="#emotional-intelligence">الذكاء العاطفي</a></li>
+                <li><a href="#communication">التواصل الفعال</a></li>
+                <li><a href="#style">الأسلوب الشخصي</a></li>
+                <li><a href="#energy">طاقة الأنوثة</a></li>
+                <li><a href="#mistakes">أخطاء شائعة</a></li>
+            </ul>
+        </nav>
+
+        <!-- Article -->
+        <article class="card" id="definition">
+            <h2>1) ما هي الأنوثة الحقيقية؟ - تجاوزي المفاهيم النمطية</h2>
+            <p>الأنوثة ليست مجرد مظهر خارجي أو سلوكيات محددة، بل هي طاقة وقوة داخلية تعكس التوازن بين الرقة والقوة، الحنان والحزم.</p>
+            <ul>
+                <li><strong>ليست ضعفاً:</strong> الأنوثة الحقيقية مصدر قوة، وليست تنازلاً عن القوة.</li>
+                <li><strong>ليست تقليداً:</strong> ليست محاولة لتقليد نموذج معين، بل اكتشاف وتعبير عن أنوثتك الفريدة.</li>
+                <li><strong>شاملة:</strong> تشمل الجوانب الجسدية، العاطفية، العقلية والروحانية.</li>
+            </ul>
+            <div class="note">خلاصة: الأنوثة الحقيقية هي التعبير الأصيل عن طاقتك الأنثوية الفريدة، وليست قالباً جاهزاً.</div>
+        </article>
+
+        <article class="card" id="self-awareness">
+            <h2>2) الوعي بالذات - أساس الأنوثة الأصيلة</h2>
+            <h3>كيف تطورين وعيكِ بذاتك؟</h3>
+            <ol>
+                <li><strong>تعرفي على قيمك:</strong> ما هي المبادئ التي تهمك حقاً؟ ما الذي يمنحك الشعور بالمعنى؟</li>
+                <li><strong>اكتشفي نقاط قوتك:</strong> ما هي مواهبك الفطرية؟ ما الذي تتميزين فيه بشكل طبيعي؟</li>
+                <li><strong>تقبلي نقاط ضعفك:</strong> اعترفي بمناطق النمو في شخصيتك دون حكم قاسٍ على نفسك.</li>
+                <li><strong>اسألي نفسك أسئلة عميقة:</strong> ماذا أريد حقاً؟ ما الذي يجعلني أشعر بالحيوية؟</li>
+            </ol>
+            <h3>تمارين عملية</h3>
+            <div style="display: grid; gap: 12px;">
+                <div>
+                    <strong>اليومية التأملية</strong>
+                    <ul>
+                        <li>خمس دقائق يومياً للتفكير في مشاعرك واحتياجاتك.</li>
+                        <li>اسألي نفسك: كيف أشعر اليوم؟ ما الذي أحتاجه؟</li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>قائمة القيم</strong>
+                    <ul>
+                        <li>حددي قيمك العشر الأكثر أهمية.</li>
+                        <li>رتبيها حسب الأولوية وراجعيها دورياً.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="warn">تحذير: لا تقارني نفسك بالآخرين. رحلتك فريدة وتختلف عن أي شخص آخر.</div>
+        </article>
+
+        <article class="card" id="self-care">
+            <h2>3) الرعاية الذاتية - أساس الأنوثة المتوازنة</h2>
+            <h3>الرعاية الشاملة</h3>
+            <ol>
+                <li><strong>الجسد:</strong> تغذية صحية، نشاط بدني منتظم، نوم كافٍ، وعناية بالمظهر تعكس تقديرك لذاتك.</li>
+                <li><strong>النفس:</strong> ممارسات الاسترخاء، حدود صحية في العلاقات، وقت للهوايات والشغف.</li>
+                <li><strong>العقل:</strong> قراءة، تعلم مستمر، تحديات عقلية تحفز النمو.</li>
+                <li><strong>الروح:</strong> تأمل، صلاة، اتصال بالطبيعة، أو أي ممارسة تمنحك السلام الداخلي.</li>
+            </ol>
+            <h3>نصائح عملية للروتين اليومي</h3>
+            <div style="display: grid; gap: 12px;">
+                <div>
+                    <strong>الصباح</strong>
+                    <ul>
+                        <li>5 دقائق تأمل أو تنفس عميق.</li>
+                        <li>شرب كوب ماء دافئ مع الليمون.</li>
+                        <li>تحديد نية إيجابية لليوم.</li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>المساء</strong>
+                    <ul>
+                        <li>تسجيل ثلاثة أمتنان عليها.</li>
+                        <li>العناية بالبشرة والشعر.</li>
+                        <li>قراءة شيء ملهم قبل النوم.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="note">نتيجة متوقعة: زيادة الثقة بالنفس، طاقة إيجابية، وجاذبية طبيعية تنبع من الداخل.</div>
+        </article>
+
+        <article class="card" id="emotional-intelligence">
+            <h2>4) الذكاء العاطفي - فن فهم المشاعر وإدارتها</h2>
+            <ul>
+                <li><strong>تعرفي على مشاعرك:</strong> اسمحي لنفسك بالشعور بكل المشاعر دون حكم.</li>
+                <li><strong>افهمي سبب مشاعرك:</strong> ما الذي يثير غضبك، حزنك، فرحك؟</li>
+                <li><strong>عبّري عن مشاعرك بذكاء:</strong> اختاري الوقت والمكان والطريقة المناسبة للتعبير.</li>
+                <li><strong>تعاطفي مع الآخرين:</strong> حاولي فهم مشاعر الآخرين دون تحميل نفسك مسؤوليتها.</li>
+            </ul>
+        </article>
+
+        <article class="card" id="communication">
+            <h2>5) التواصل الفعال - بلغة الأنوثة الواثقة</h2>
+            <p>أساليب مقترحة:</p>
+            <ul>
+                <li><strong>استمعي باهتمام حقيقي:</strong> أعطي الشخص الآخر كامل انتباهك.</li>
+                <li><strong>تحدثي بوضوح وثقة:</strong> عبّري عن رأيك واحتياجاتك بوضوح دون عدوانية.</li>
+                <li><strong>استخدمي لغة جسد منفتحة:</strong> اتصال بصري، ابتسامة، وإيماءات توحي بالانفتاح.</li>
+                <li><strong>اختاري كلماتك بعناية:</strong> كلمات رقيقة ولكن حازمة عندما تحتاجين.</li>
+            </ul>
+            <p>استراتيجية ذكية: تعلمي قول "لا" بلطف ولكن بحزم عندما تحتاجين إلى حماية طاقتك ووقتك.</p>
+        </article>
+
+        <article class="card" id="style">
+            <h2>6) الأسلوب الشخصي - تعبير خارجي عن أنوثتك الداخلية</h2>
+            <ul>
+                <li><strong>اكتشفي ما يعجبك:</strong> ما الألوان، القطع، والأقمشة التي تشعرك بالثقة والراحة؟</li>
+                <li><strong>أنشئي قاعدة أساسية:</strong> قطع متعددة الاستخدامات تعكس شخصيتك.</li>
+                <li><strong>اهتمي بالتفاصيل:</strong> إكسسوارات بسيطة تبرز أناقتك دون مبالغة.</li>
+                <li><strong>كوني أصيلة:</strong> لا تتبعي كل الصيحات، اختاري ما يناسب شخصيتك وقيمك.</li>
+            </ul>
+        </article>
+
+        <article class="card" id="energy">
+            <h2>7) طاقة الأنوثة - كيف تنشرين طاقة إيجابية حولك؟</h2>
+            <p>الطاقة الأنثوية المتوازنة تجذب الخير والجمال إلى حياتك.</p>
+            <ul>
+                <li><strong>الامتنان:</strong> ابدئي يومك بتذكر النعم في حياتك.</li>
+                <li><strong>التفاؤل:</strong> ابحثي عن الجانب المشرق في التحديات.</li>
+                <li><strong>الكرم العاطفي:</strong> قدمي الدعم والكلمات الطيبة للآخرين.</li>
+                <li><strong>حماية الطاقة:</strong> تعلمي وضع حدود صحية مع الأشخاص والمواقف التي تستنزف طاقتك.</li>
+            </ul>
+            <div class="note">لا تهملي حماية طاقتك. تعلمي قول "لا" وتحديد ما يدخل إلى مساحتك الشخصية.</div>
+        </article>
+
+        <article class="card" id="mistakes">
+            <h2>8) أخطاء شائعة تجنّبيها في رحلتك نحو الأنوثة</h2>
+            <ul>
+                <li>لا تحاولي تقليد الآخرين بدلاً من اكتشاف أنوثتك الفريدة.</li>
+                <li>لا تهملي الرعاية الذاتية بحجة الانشغال بالمسؤوليات.</li>
+                <li>لا تخلطي بين الأنوثة والضعف أو الاعتماد على الآخرين.</li>
+                <li>لا تتوقعي الكمال - الأنوثة الحقيقية تتضمن تقبل النقص البشري.</li>
+            </ul>
+        </article>
+
+        <footer>
+            © 2025 —    رحلة الأنوثة المتوازنة
+        </footer>
+    </div>
+</body>
+  </html>
