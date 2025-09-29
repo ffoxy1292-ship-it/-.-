@@ -1,18 +1,10 @@
+/* 1. عام ← خاص */
 body {
-    font-size: 18px; /* أو أكبر */
+    font-size: 18px;
 }
 
-.articles-list a {
-    font-size: 1.2em;
-    padding: 20px 25px; /* تكبير المساحات */
-}
-.articles-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* عمودين */
-    gap: 20px; /* مسافة بين العناصر */
-}
 .container {
-    max-width: 1200px; /* عرض أكبر */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
 }
@@ -20,4 +12,31 @@ body {
 h1 {
     font-size: 2.5em;
     margin-bottom: 50px;
+}
+
+/* 2. الشبكة أولاً */
+.articles-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+/* 3. ثم تفاصيل العناصر */
+.articles-list a {
+    font-size: 1.2em;
+    padding: 20px 25px;
+    background: white;
+    border-radius: 10px; /* زوديها للسلاسة */
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* ظل أنعم */
+    transition: all 0.3s;
+}
+
+.articles-list a:hover {
+    background: #FFE6EA;
+    transform: translateY(-3px); /* حركة أكبر */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
