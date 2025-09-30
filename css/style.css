@@ -1,4 +1,60 @@
-/* 1. عام ← خاص */
+
+:root {
+
+  --primary: #7c3aed;
+
+  --primary-light: #a78bfa;
+
+  --pink: #f0abfc;
+
+  --pink-light: #f9d1ff;
+
+  --blue: #93c5fd;
+
+  --blue-light: #bfdbfe;
+
+  --success: #34d399;
+
+  --warning: #fbbf24;
+
+  --text: #1f2937;
+
+  --light: #f8fafc;
+
+  --dark: #1e293b;
+
+}
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+box-sizing: border-box;
+
+}
+
+body {
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  background: linear-gradient(135deg, var(--pink-light) 0%, var(--blue-light) 100%);
+
+  color: var(--text);
+
+  line-height: 1.6;
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 20px;
+
+}/* 1. عام ← خاص */
 body {
     font-size: 20px;
 }
