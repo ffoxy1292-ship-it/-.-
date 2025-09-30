@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>العناية بالبشرة - دليل شامل للبشرة النضرة</title>
+    <title>العناية بالبشرة - دليل مروة الشامل للبشرة النضرة</title>
     <style>
         :root {
-            --bg: #fff0f5;
+            --bg: #fff5f7;
             --card: #ffffff;
-            --accent: #ff69b4;
-            --accent2: #ff1493;
-            --muted: #666666;
-            --ok: #20b2aa;
-            --warn: #ffa500;
+            --accent: #ec4899;
+            --accent2: #db2777;
+            --muted: #6b7280;
+            --ok: #10b981;
+            --warn: #f59e0b;
             --maxW: 980px;
-            --radius: 12px;
+            --radius: 16px;
         }
 
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         html {
@@ -27,30 +29,31 @@
         }
 
         body {
-            margin: 0;
             font-family: 'Arial', 'Segoe UI', system-ui;
             line-height: 1.7;
-            background: var(--bg);
-            color: #333333;
-            padding: 16px;
+            background: linear-gradient(135deg, #fff5f7 0%, #fce7f3 100%);
+            color: #374151;
+            padding: 20px;
+            min-height: 100vh;
         }
 
         .container {
             max-width: var(--maxW);
             margin: 0 auto;
-            padding: 12px;
+            padding: 20px;
         }
 
         .header {
             background: var(--card);
-            padding: 18px;
+            padding: 30px;
             border-radius: var(--radius);
-            box-shadow: 0 8px 30px rgba(255, 105, 180, 0.1);
+            box-shadow: 0 10px 40px rgba(236, 72, 153, 0.1);
             display: flex;
-            gap: 16px;
+            gap: 25px;
             align-items: center;
             flex-wrap: wrap;
-            border: 2px solid #ffebf3;
+            border: 2px solid #fdf2f8;
+            margin-bottom: 25px;
         }
 
         .header .text {
@@ -61,178 +64,220 @@
         .header h1 {
             margin: 0;
             color: var(--accent);
-            font-size: 22px;
-            background: linear-gradient(45deg, #ff69b4, #ff1493);
+            font-size: 28px;
+            background: linear-gradient(135deg, #ec4899, #db2777);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
         }
 
         .header p {
-            margin: 6px 0 0;
+            margin: 0;
             color: var(--muted);
+            font-size: 16px;
         }
 
         .header img {
-            width: 220px;
-            height: 130px;
-            object-fit: contain;
-            border-radius: 8px;
-            flex: 0 0 220px;
+            width: 250px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            flex: 0 0 250px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
         }
 
         /* content cards */
         .card {
             background: var(--card);
-            padding: 16px;
-            border-radius: 12px;
-            margin-top: 14px;
-            border: 1px solid rgba(255, 105, 180, 0.1);
-            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.05);
+            padding: 25px;
+            border-radius: var(--radius);
+            margin-top: 20px;
+            border: 1px solid rgba(236, 72, 153, 0.1);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
         h2 {
             color: var(--accent);
-            margin: 10px 0 8px;
-            border-right: 4px solid var(--accent);
-            padding-right: 10px;
+            margin: 15px 0 12px;
+            border-right: 5px solid var(--accent);
+            padding-right: 15px;
+            font-size: 22px;
         }
 
         h3 {
             color: var(--accent2);
-            margin: 8px 0;
+            margin: 12px 0 8px;
+            font-size: 18px;
         }
 
         p, li {
-            color: #444444;
+            color: #4b5563;
+            font-size: 16px;
         }
 
         ul, ol {
-            margin: 8px 0 12px;
-            padding-left: 18px;
+            margin: 12px 0 18px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.6;
         }
 
         img.res {
             width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin: 12px 0;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 20px 0;
             display: block;
-            border: 2px solid #ffebf3;
+            border: 2px solid #fdf2f8;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .note {
-            background: #fff0f5;
-            border-left: 4px solid var(--ok);
-            padding: 10px;
-            border-radius: 8px;
-            color: #2e8b57;
+            background: #f0fdf4;
+            border-left: 5px solid var(--ok);
+            padding: 15px;
+            border-radius: 10px;
+            color: #065f46;
+            margin: 15px 0;
+            font-size: 15px;
         }
 
         .warn {
-            background: #fff8e6;
-            border-left: 4px solid var(--warn);
-            padding: 10px;
-            border-radius: 8px;
-            color: #b8860b;
+            background: #fffbeb;
+            border-left: 5px solid var(--warn);
+            padding: 15px;
+            border-radius: 10px;
+            color: #92400e;
+            margin: 15px 0;
+            font-size: 15px;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 12px 0;
-            background: #fffafc;
-            border-radius: 8px;
+            margin: 20px 0;
+            background: #fdf2f8;
+            border-radius: 12px;
             overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
 
         th, td {
-            padding: 10px;
-            border: 1px solid #ffe4ec;
+            padding: 15px;
+            border: 1px solid #fbcfe8;
             text-align: center;
+            font-size: 14px;
         }
 
         thead {
-            background: #fff0f5;
+            background: linear-gradient(135deg, #fce7f3, #fbcfe8);
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #fdf2f8;
+        }
+
+        tbody tr:hover {
+            background: #fce7f3;
+        }
+
+        .expert-profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: linear-gradient(135deg, #fdf2f8, #fce7f3);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border: 2px solid #fbcfe8;
+        }
+
+        .expert-profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .expert-info h3 {
+            margin: 0 0 5px 0;
             color: var(--accent);
         }
 
-        .cta {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-top: 12px;
-        }
-
-        .btn {
-            background: linear-gradient(45deg, var(--accent), var(--accent2));
-            color: white;
-            padding: 10px 14px;
-            border-radius: 10px;
-            font-weight: 800;
-            text-decoration: none;
-            display: inline-block;
-            border: none;
-            cursor: pointer;
-        }
-
-        .small {
-            font-size: 13px;
+        .expert-info p {
+            margin: 0;
             color: var(--muted);
+            font-size: 14px;
         }
 
         footer {
             text-align: center;
             color: var(--muted);
-            margin: 18px 0;
-            font-size: 13px;
-        }
-
-        .anime-character {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .anime-character img {
-            max-width: 200px;
-            height: auto;
-            border-radius: 50%;
-            border: 3px solid var(--accent);
-            padding: 5px;
-            background: white;
-        }
-
-        /* TEXT WRAP + FLEX FIXES for mobile */
-        header .text, .header, .card, .container {
-            word-break: normal;
-            hyphens: auto;
-        }
-
-        a {
-            word-wrap: break-word;
-            overflow-wrap: break-word;
+            margin: 30px 0;
+            font-size: 14px;
+            padding: 20px;
+            border-top: 2px solid #fdf2f8;
         }
 
         /* Responsive design */
-        @media (max-width: 720px) {
+        @media (max-width: 768px) {
             .header {
                 flex-direction: column;
-                align-items: flex-start;
-                padding: 14px;
+                text-align: center;
+                padding: 20px;
             }
 
             .header img {
                 width: 100%;
-                height: auto;
-                flex: 0 0 auto;
+                height: 200px;
+                flex: none;
                 order: -1;
             }
 
             .header h1 {
-                font-size: 18px;
+                font-size: 24px;
+            }
+
+            .expert-profile {
+                flex-direction: column;
+                text-align: center;
             }
 
             body {
-                padding: 12px;
+                padding: 15px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+            
+            th, td {
+                padding: 10px;
+                font-size: 12px;
             }
         }
     </style>
@@ -242,185 +287,210 @@
         <!-- Header -->
         <header class="header" role="banner">
             <div class="text">
-                <h1>🧴 العناية بالبشرة - دليل شامل للبشرة النضرة 🌸</h1>
-                <p class="small">اكتشفي أسرار البشرة المتألقة مع روتين عناية ياباني كرتوني</p>
+                <h1>🌸 العناية بالبشرة مع مروة 🌸</h1>
+                <p>دليل شامل للعناية بالبشرة للحصول على بشرة متألقة ونضرة</p>
             </div>
-            <img alt="شخصية أنمي تعتني ببشرتها" src="https://i.imgur.com/8z7Q9bO.png" />
+            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=500&h=300&fit=crop&crop=center" alt="مستحضرات العناية بالبشرة">
         </header>
 
-        <!-- Anime Character -->
-        <div class="anime-character">
-            <img src="https://i.imgur.com/3J8Q1bG.png" alt="شخصية أنمي مع بشرة متألقة">
-            <p><strong>🌸 هانا - خبيرة العناية بالبشرة 🌸</strong></p>
+        <!-- Expert Profile -->
+        <div class="expert-profile">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop&crop=face" alt="مروة - خبيرة التجميل">
+            <div class="expert-info">
+                <h3>مروة - خبيرة التجميل والعناية بالبشرة</h3>
+                <p>أكثر من 8 سنوات خبرة في مجال العناية بالبشرة والجمال</p>
+            </div>
         </div>
 
         <!-- Table of contents -->
-        <nav aria-label="فهرس المحتوى" class="card">
-            <strong>فهرس سريع:</strong>
-            <ul style="margin: 8px 0 0; padding-left: 18px;">
-                <li><a href="#types">أنواع البشرة</a></li>
-                <li><a href="#routine">روتين يومي سحري</a></li>
-                <li><a href="#products">منتجات أساسية</a></li>
+        <nav class="card">
+            <h2>📖 محتويات الدليل</h2>
+            <ul>
+                <li><a href="#types">أنواع البشرة وكيفية التعرف عليها</a></li>
+                <li><a href="#routine">الروتين اليومي للعناية</a></li>
+                <li><a href="#products">المنتجات الأساسية</a></li>
                 <li><a href="#natural">وصفات طبيعية</a></li>
                 <li><a href="#mistakes">أخطاء شائعة</a></li>
-                <li><a href="#tips">نصائح خاصة</a></li>
+                <li><a href="#tips">نصائح خاصة من مروة</a></li>
             </ul>
         </nav>
 
         <!-- Article Content -->
         <article class="card" id="types">
-            <h2>1) 🎭 أنواع البشرة - اعرفي بشرتك أولاً</h2>
-            <p>كل بشرة فريدة وتحتاج عناية خاصة! اكتشفي نوع بشرتك:</p>
-            <ul>
-                <li><strong>🌟 البشرة العادية:</strong> متوازنة - لا دهنية ولا جافة</li>
-                <li><strong>💧 البشرة الجافة:</strong> تحتاج ترطيب إضافي</li>
-                <li><strong>✨ البشرة الدهنية:</strong> لامعة مع مسام واسعة</li>
-                <li><strong>🎯 البشرة المختلطة:</strong> جافة في مناطق ودهنية في أخرى</li>
-                <li><strong>🌹 البشرة الحساسة:</strong> تتهيج بسهولة</li>
-            </ul>
-            <img class="res" src="https://i.imgur.com/5Xa9bR2.png" alt="شخصيات أنمي تمثل أنواع البشرة المختلفة">
-            <div class="note">💡 نصيحة: اختاري المنتجات المناسبة لنوع بشرتك للحصول على أفضل النتائج!</div>
-        </article>
-
-        <article class="card" id="routine">
-            <h2>2) 🌅 روتين العناية اليومي - سحر اليابانيات</h2>
-            <h3>🌞 روتين الصباح</h3>
-            <ol>
-                <li><strong>غسول لطيف:</strong> نظفي بشرتك بلطف</li>
-                <li><strong>تونر مرطب:</strong> انعشي بشرتك</li>
-                <li><strong>سيروم:</strong> عالجي مشاكل بشرتك</li>
-                <li><strong>مرطب:</strong> احمي بشرتك من الجفاف</li>
-                <li><strong>واقي شمس:</strong> أهم خطوة! SPF 30+</li>
-            </ol>
-
-            <h3>🌙 روتين المساء</h3>
-            <ol>
-                <li><strong>إزالة المكياج:</strong> بلطف وبشكل كامل</li>
-                <strong>غسول مزدوج:</strong> تنظيف عميق</li>
-                <li><strong>تونر:</strong> موازنة البشرة</li>
-                <li><strong>مقشر (2-3 مرات أسبوعياً):</strong> تجديد الخلايا</li>
-                <li><strong>قناع (مرة أسبوعياً):</strong> عناية مكثفة</li>
-                <li><strong>مرطب ليلي:</strong> إصلاح أثناء النوم</li>
-            </ol>
-
-            <img class="res" src="https://i.imgur.com/7K9c3dR.png" alt="شخصية أنمي تتبع روتين العناية">
-            <div class="warn">⚠️ تنبيه: لا تنسي إزالة المكياج قبل النوم أبداً!</div>
-        </article>
-
-        <article class="card" id="products">
-            <h2>3) 🧴 المنتجات الأساسية - حقيبة الجمال</h2>
+            <h2>🎭 أنواع البشرة</h2>
+            <p>كل بشرة فريدة وتحتاج عناية خاصة. تعرفي على نوع بشرتك:</p>
             
-            <h3>📊 دليل المنتجات حسب نوع البشرة</h3>
+            <img class="res" src="https://images.unsplash.com/photo-1556228578-8c8ae2a5e0d4?w=800&h=300&fit=crop" alt="أنواع البشرة المختلفة">
+            
             <table>
                 <thead>
                     <tr>
                         <th>نوع البشرة</th>
-                        <th>المنتج المثالي</th>
-                        <th>المكونات المناسبة</th>
+                        <th>الخصائص</th>
+                        <th>نصائح العناية</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>🔸 جافة</td>
-                        <td>مرطب غني</td>
-                        <td>هيالورونيك أسيد، سيراميد</td>
+                        <td><strong>البشرة العادية</strong></td>
+                        <td>متوازنة - لا دهنية ولا جافة</td>
+                        <td>استخدمي منتجات متوازنة للحفاظ على التوازن</td>
                     </tr>
                     <tr>
-                        <td>🔸 دهنية</td>
-                        <td>جيل خفيف</td>
-                        <td>ساليسيليك أسيد، نياسيناميد</td>
+                        <td><strong>البشرة الجافة</strong></td>
+                        <td>خشنة الملمس - تحتاج ترطيب مستمر</td>
+                        <td>كريمات مرطبة غنية - تجنب الصابون القاسي</td>
                     </tr>
                     <tr>
-                        <td>🔸 مختلطة</td>
-                        <td>مرطب متوازن</td>
-                        <td>فيتامين C، بيوتين</td>
+                        <td><strong>البشرة الدهنية</strong></td>
+                        <td>لماعة - مسام واسعة</td>
+                        <td>منتجات خالية من الزيوت - تقشير منتظم</td>
                     </tr>
                     <tr>
-                        <td>🔸 حساسة</td>
-                        <td>منتجات لطيفة</td>
-                        <td>أفينو، كاليندولا</td>
+                        <td><strong>البشرة المختلطة</strong></td>
+                        <td>دهنية في T zone - جافة في الخدود</td>
+                        <td>عناية مزدوجة حسب مناطق الوجه</td>
+                    </tr>
+                    <tr>
+                        <td><strong>البشرة الحساسة</strong></td>
+                        <td>تتهيج بسهولة - حمراء</td>
+                        <td>منتجات لطيفة - اختباري قبل الاستخدام</td>
                     </tr>
                 </tbody>
             </table>
 
+            <div class="note">
+                💡 نصيحة من مروة: اختاري المنتجات المناسبة لنوع بشرتك للحصول على أفضل النتائج!
+            </div>
+        </article>
+
+        <article class="card" id="routine">
+            <h2>🌅 الروتين اليومي للعناية</h2>
+            
+            <h3>🌞 روتين الصباح</h3>
+            <ol>
+                <li><strong>التنظيف:</strong> استخدمي غسول لطيف مناسب لنوع بشرتك</li>
+                <li><strong>التونر:</strong> استعملي تونر مرطب لموازنة البشرة</li>
+                <li><strong>السيروم:</strong> طبيقي سيروم مناسب لمشاكل بشرتك</li>
+                <li><strong>المرطب:</strong> استخدمي مرطب يناسب نوع بشرتك</li>
+                <li><strong>الحماية:</strong> لا تنسي واقي الشمس SPF 30+ على الأقل</li>
+            </ol>
+
+            <img class="res" src="https://images.unsplash.com/photo-1556228578-2d4d0d8a0c7a?w=800&h=300&fit=crop" alt="روتين الصباح للعناية بالبشرة">
+
+            <h3>🌙 روتين المساء</h3>
+            <ol>
+                <li><strong>إزالة المكياج:</strong> أزيلي المكياج تماماً بمنتج لطيف</li>
+                <li><strong>التنظيف المزدوج:</strong> استخدمي غسول لتنظيف عميق</li>
+                <li><strong>التقشير:</strong> 2-3 مرات أسبوعياً لتجديد الخلايا</li>
+                <li><strong>التونر:</strong> لترطيب البشرة وموازنتها</li>
+                <li><strong>المصل الليلي:</strong> استخدمي مصل مكثف للإصلاح الليلي</li>
+                <li><strong>المرطب الليلي:</strong> مرطب غني للترطيب العميق</li>
+            </ol>
+
+            <div class="warn">
+                ⚠️ تنبيه: لا تنسي إزالة المكياج قبل النوم أبداً!
+            </div>
+        </article>
+
+        <article class="card" id="products">
+            <h2>🧴 المنتجات الأساسية</h2>
+            
+            <img class="res" src="https://images.unsplash.com/photo-1556228577-8ed329c4abf3?w=800&h=300&fit=crop" alt="منتجات العناية بالبشرة">
+            
             <h3>🎀 المنتجات التي لا غنى عنها</h3>
             <ul>
-                <li>🧼 غسول لطيف خالٍ من الكبريتات</li>
-                <li>💦 تونر مرطب بدون كحول</li>
-                <li>✨ سيروم فيتامين C للصباح</li>
-                <li>🌙 سيروم ريتينول للمساء</li>
-                <li>🧴 مرطب يناسب نوع بشرتك</li>
-                <li>☀️ واقي شمس SPF 30+ على الأقل</li>
+                <li><strong>غسول الوجه:</strong> اخترى غسول لطيف خالٍ من الكبريتات</li>
+                <li><strong>التونر:</strong> تونر مرطب بدون كحول</li>
+                <li><strong>السيروم:</strong> فيتامين C للصباح، ريتينول للمساء</li>
+                <li><strong>المرطب:</strong> يناسب نوع بشرتك وموسم السنة</li>
+                <li><strong>واقي الشمس:</strong> SPF 30+ على الأقل، كل يوم</li>
+                <li><strong>المقشر:</strong> مقشر لطيف 2-3 مرات أسبوعياً</li>
+                <li><strong>القناع:</strong> قناع مرطب أو مغذي مرة أسبوعياً</li>
             </ul>
+
+            <div class="note">
+                🌸 نصيحة: ابدئي بمنتجات بسيطة ثم أضيفي منتجات أخرى تدريجياً
+            </div>
         </article>
 
         <article class="card" id="natural">
-            <h2>4) 🌿 وصفات طبيعية - جمال من مطبخك</h2>
-            <p>وصفات كرتونية سهلة وبسيطة:</p>
+            <h2>🌿 وصفات طبيعية من مطبخك</h2>
             
+            <img class="res" src="https://images.unsplash.com/photo-1556228577-75c5b5d7b7c7?w=800&h=300&fit=crop" alt="مكونات طبيعية للعناية بالبشرة">
+
             <h3>🍯 قناع العسل واللبن</h3>
             <ul>
-                <li>ملعقتان عسل طبيعي</li>
-                <li>ملعقة لبن زبادي</li>
-                <li>اخلطي وطبيقي لمدة 15 دقيقة</li>
-                <li>يشد البشرة ويرطبها</li>
+                <li>ملعقتان كبيرتان من العسل الطبيعي</li>
+                <li>ملعقة كبيرة من اللبن الزبادي</li>
+                <li>اخلطي المكونات جيداً</li>
+                <li>طبيقي على الوجه لمدة 15-20 دقيقة</li>
+                <li>يشد البشرة ويرطبها بعمق</li>
             </ul>
 
-            <h3>🥑 قناع الأفوكادو</h3>
+            <h3>🥑 قناع الأفوكادو المغذي</h3>
             <ul>
                 <li>نصف حبة أفوكادو ناضجة</li>
-                <li>ملعقة عسل</li>
-                <li>اهرسي وطبيقي لمدة 20 دقيقة</li>
-                <li>مغذي للبشرة الجافة</li>
+                <li>ملعقة كبيرة عسل</li>
+                <li>ملعقة صغيرة زيت زيتون</li>
+                <li>اهرسي واخلطي ثم طبيقي لمدة 20 دقيقة</li>
+                <li>مثالي للبشرة الجافة</li>
             </ul>
 
-            <h3>🍓 مقشر الفراولة</h3>
+            <h3>🍓 مقشر الفراولة الطبيعي</h3>
             <ul>
                 <li>3 حبات فراولة مهروسة</li>
-                <li>ملعقة سكر بني</li>
-                <li>ملعقة عسل</li>
-                <li>دلكي بلطف ثم اشطفي</li>
+                <li>ملعقة كبيرة سكر بني</li>
+                <li>ملعقة صغيرة عسل</li>
+                <li>دلكي الوجه بلطف ثم اشطفيه</li>
+                <li>ينظف وينعش البشرة</li>
             </ul>
-
-            <img class="res" src="https://i.imgur.com/2b8c9qL.png" alt="شخصية أنمي تستخدم أقنعة طبيعية">
-            <div class="note">💫 ملاحظة: جربي الوصفات على منطقة صغيرة أولاً للتأكد من عدم وجود حساسية</div>
         </article>
 
         <article class="card" id="mistakes">
-            <h2>5) ❌ أخطاء شائعة - تجنبيها!</h2>
+            <h2>❌ أخطاء شائعة في العناية بالبشرة</h2>
+            
+            <img class="res" src="https://images.unsplash.com/photo-1556228578-5b5d5a5a5a5a?w=800&h=300&fit=crop" alt="أخطاء شائعة في العناية بالبشرة">
+            
             <ul>
-                <li>🚫 النوم بالمكياج - كارثة للبشرة!</li>
-                <li>🚫 استخدام منتجات منتهية الصلاحية</li>
-                <li>🚫 الإفراط في التقشير - مرة واحدة أسبوعياً كافية</li>
-                <li>🚫 عدم استخدام واقي الشمس في الأيام الغائمة</li>
-                <li>🚫 تغيير المنتجات بكثرة - أعطيها وقتاً</li>
-                <li>🚫 لمس الوجه بأيدي غير نظيفة</li>
-                <li>🚫 استخدام الماء الساخن للغسيل - فاتر أفضل</li>
+                <li><strong>النوم بالمكياج:</strong> يسبب انسداد المسام والتهابات</li>
+                <li><strong>الإفراط في التقشير:</strong> يؤدي إلى تهيج البشرة</li>
+                <li><strong>عدم استخدام واقي الشمس:</strong> حتى في الأيام الغائمة</li>
+                <li><strong>تغيير المنتجات بكثرة:</strong> امنحي المنتج وقتاً كافياً</li>
+                <li><strong>لمس الوجه:</strong> ينقل البكتيريا والزيوت</li>
+                <li><strong>استخدام الماء الساخن:</strong> يجفف البشرة، استخدمي الماء الفاتر</li>
+                <li><strong>عدم تنظيف فرش المكياج:</strong> تتراكم البكتيريا</li>
             </ul>
+
+            <div class="warn">
+                🚫 تجنبي هذه الأخطاء للحفاظ على بشرة صحية ونضرة
+            </div>
         </article>
 
         <article class="card" id="tips">
-            <h2>6) 💝 نصائح خاصة - أسرار الجمال</h2>
+            <h2>💝 نصائح خاصة من مروة</h2>
+            
+            <img class="res" src="https://images.unsplash.com/photo-1556228578-8c8ae2a5e0d4?w=800&h=300&fit=crop" alt="نصائح للعناية بالبشرة">
+            
             <ul>
-                <li>💤 نامي 8 ساعات - النوم هو أفضل كريم!</li>
-                <li>💧 اشربي 8 أكواب ماء يومياً</li>
-                <li>🥗 كلي الخضار والفواكه الطازجة</li>
-                <li>🧴 نظفي فرش المكياج أسبوعياً</li>
-                <li>🛌 غطي وسادتك بقطعة قماش نظيفة</li>
-                <li>📱 نظفي شاشة هاتفك بانتظام</li>
-                <li>😊 ابتسمي - الجمال الحقيقي من الداخل!</li>
+                <li><strong>النوم الكافي:</strong> 7-8 ساعات نوم ليلاً</li>
+                <li><strong>شرب الماء:</strong> 8 أكواب ماء يومياً على الأقل</li>
+                <li><strong>التغذية الصحية:</strong> خضروات وفواكه طازجة</li>
+                <li><strong>نظافة الأدوات:</strong> نظفي فرش المكياج أسبوعياً</li>
+                <li><strong>وسادة نظيفة:</strong> غطي الوسادة بقطعة قماش نظيفة</li>
+                <li><strong>إدارة التوتر:</strong> التوتر يؤثر سلباً على البشرة</li>
+                <li><strong>الرياضة:</strong> تحسن الدورة الدموية</li>
             </ul>
 
-            <img class="res" src="https://i.imgur.com/9Q2b4cR.png" alt="شخصية أنمي سعيدة ببشرة متألقة">
-            
             <div class="note">
-                🌸 تذكري: الجمال الحقيقي يأتي من الثقة والاهتمام بالنفس. كوني جميلة من الداخل والخارج!
+                🌟 تذكري: الجمال الحقيقي يأتي من العناية المستمرة والثقة بالنفس!
             </div>
         </article>
 
         <footer>
-            © 2025 — دليل العناية بالبشرة مع هانا 🌸
+            <p>© 2025 - دليل العناية بالبشرة مع مروة | كل الحقوق محفوظة</p>
+            <p>🌸 استمتعي برحلة العناية ببشرتك وتألقي بثقة 🌸</p>
         </footer>
     </div>
 </body>
-</html>
+                </html>
