@@ -1,6 +1,6 @@
 /* 1. عام ← خاص */
 body {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .container {
@@ -12,6 +12,7 @@ body {
 h1 {
     font-size: 2.5em;
     margin-bottom: 50px;
+    text-align:center;
 }
 
 /* 2. الشبكة أولاً */
@@ -25,18 +26,25 @@ h1 {
 
 /* 3. ثم تفاصيل العناصر */
 .articles-list a {
-    font-size: 1.2em;
+    font-size: 1.9em;
     padding: 20px 25px;
     background: white;
     border-radius: 10px; /* زوديها للسلاسة */
     text-decoration: none;
     color: #333;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* ظل أنعم */
-    transition: all 0.3s;
-}
+    transition: all 0.3s; 
+    height: 120px; /* ارتفاع ثابت */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
+
 
 .articles-list a:hover {
-    background: #FFE6EA;
+    background: #DA70D6;
     transform: translateY(-3px); /* حركة أكبر */
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
